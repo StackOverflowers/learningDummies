@@ -2,6 +2,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop:ital@1&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,700&family=Dancing+Script:wght@700&display=swap');
+
 
 *{
 
@@ -16,6 +20,10 @@
     color:white;
 }
 
+.card-title {
+    font-family: 'Cormorant Garamond', serif;
+}
+
 .navbar{
 background-color:transparent;
 position:relative;
@@ -28,7 +36,25 @@ z-index: 4;
     --prueba:(100deg,#21c8f6,#637bff);
 }
 
+.card-title{
+    padding-left: 70px;
+    
+}
+.repositorios{
+    font-family: 'Dancing Script', cursive;
+    margin-top: 20px;
+}
+.bootstrap{
+    margin-left:70px;
+    margin-top: 0px;
+    font-family: 'Dancing Script', cursive;
+}
 
+.card-img-top{
+    margin-top: 0px;
+    width: 290px;
+    height: 300px;
+}
 .nav-link{
     margin-left:150px;
 }
@@ -321,4 +347,14 @@ footer{
     background-color: #111;
     color:white;
     font-family: 'Zen Loop', cursive;
+}
+
+.logica {
+    margin-left: 60px;
+    font-family: 'Dancing Script', cursive;
+}
+
+.js {
+    margin-left: 80px;  
+    font-family: 'Dancing Script', cursive;
 }
