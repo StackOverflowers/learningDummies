@@ -1,69 +1,120 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tips Favoritos</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link rel="stylesheet" href="./assets/CSS/estilosblog.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-lg  bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Learning Dummies</a>
-          <div class="bienvenido">
-            <div>
-              <h6 class="bienvenida" id="bienvenida"></h6>
+            <a class="navbar-brand" href="#">Learning Dummies</a>
+            <div class="bienvenido">
+                <div>
+                    <h6 class="bienvenida" id="bienvenida"></h6>
+                </div>
             </div>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-            </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscador de tips" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Busca tips!</button>
-            </form>
-          </div>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Cursos Favoritos</a>
-          </li>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown">
+                </ul>
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Buscador de tips" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Busca tips!</button>
+                </form>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Cursos Favoritos</a>
+            </li>
         </div>
-      </nav>
-      <section id="principal" class="principal">
+    </nav>
+    <section id="principal" class="principal">
         <section id="publicaciones" class="publicaciones">
             <div class="container mb-4">
                 <h1>Tips Favoritos</h1>
                 <span>En esta sección podrás consultar los tips más importantes para ti.</span>
             </div>
-        
+
             <div class="container-fluid" id="main-content">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
-        
-        
+                            <div class="card">
+                                <div class="card-header">
+                                    Categoría: Javascript
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">¿Cómo asignar una variable?</h5>
+                                    <p class="card-text">
+                                        Puedes declarar una variable de dos formas:
+                                        Con la palabra clave var . Por ejemplo, var x = 42 . Esta sintaxis se puede
+                                        utilizar para declarar variables locales y globales, dependiendo del contexto de
+                                        ejecución.
+                                        Con la palabra clave const o let . Por ejemplo, let y = 13.
+                                    </p>
+                                    <a href="#" class="btn btn-danger">Eliminar tip :(</a>
+                                </div>
+                            </div>
+                            <br>
+                            <div class="card">
+                                <div class="card-header">
+                                    Categoría: Repositorios
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">¿Cuáles son los pasos básicos?</h5>
+                                    <p class="card-text">
+                                        git clone [urldelproyecto]<br>
+                                        cd [carpeta del proyecto]<br>
+                                        git branch -r <br>
+                                        git branch [rama asignada]<br>
+                                        git checkout [rama asignada]<br>
+                                        git fetch origin [rama asignada]<br>
+                                        git pull origin [rama asignada]<br>
+                                        y ahi si estamos listos para modificar la pagina que nos corresponde<br>
+                                        git push -u origin [rama asignada]<br>
+                                        para hacer el merge con dev:<br>
+                                        git branch dev<br>
+                                        git checkout dev<br>
+                                        git fetch origin dev<br>
+                                        git pull origin dev<br>
+                                        git merge [rama asignada]<br>
+                                        git status<br>
+                                        git commit -m "Merge with [rama asignada]"<br>
+                                        git push -u origin dev<br>
+                                        y confirmar en el github<br>
+                                    </p>
+                                    <a href="#" class="btn btn-danger">Eliminar tip :(</a>
+                                </div>
+                            </div>
+
                         </div>
 
         </section>
 
-        <section id="sidebar" class="sidebar p-3">          
+        <section id="sidebar" class="sidebar p-3">
             <div class="card categorias" style="width: 18rem">
                 <div class="card-header text-white encabezado-sidebar">
                     Categorias
                 </div>
-                
-                    <a href="moduloHtmlCss.html" class="enlace-sidebar" target="_blank">HTML Y CSS</a>
-                    <a href="javaScript.html" class="enlace-sidebar" target="_blank">Javascript</a>
-                    <a href="logica.html" class="enlace-sidebar" target="_blank">Logica y Algoritmia</a>
-                    <a href="bootstrap.html" class="enlace-sidebar" target="_blank">Bootstrap</a>
-                    <a href="repos.html" class="enlace-sidebar" target="_blank">Repositorios</a>
-                    <a href="scrum.html" class="enlace-sidebar" target="_blank">Scrum</a>
+
+                <a href="moduloHtmlCss.html" class="enlace-sidebar" target="_blank">HTML Y CSS</a>
+                <a href="javaScript.html" class="enlace-sidebar" target="_blank">Javascript</a>
+                <a href="logica.html" class="enlace-sidebar" target="_blank">Logica y Algoritmia</a>
+                <a href="bootstrap.html" class="enlace-sidebar" target="_blank">Bootstrap</a>
+                <a href="repos.html" class="enlace-sidebar" target="_blank">Repositorios</a>
+                <a href="scrum.html" class="enlace-sidebar" target="_blank">Scrum</a>
             </div>
             <div class="card categorias" style="width: 18rem">
                 <div class="card-header text-white encabezado-sidebar">
@@ -78,22 +129,24 @@
                 </ul>
             </div>
         </section>
-      </section>
+    </section>
 
-      <footer>
+    <footer>
         <div class="footer-content">
-          <h3>StackOverFlowers</h3>
-          <p>Somos una pagina que busca impartir el conocimiento por medio de algunos tips utiles para que todo aquel con conocimientos básicos para que puedas llevar tu carrera profesional a otro nivel</p>
-          <ul class="socials">
-            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fab fa-git"></i></a></li>
-          </ul>
+            <h3>StackOverFlowers</h3>
+            <p>Somos una pagina que busca impartir el conocimiento por medio de algunos tips utiles para que todo aquel
+                con conocimientos básicos para que puedas llevar tu carrera profesional a otro nivel</p>
+            <ul class="socials">
+                <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+                <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+                <li><a href=""><i class="fab fa-git"></i></a></li>
+            </ul>
         </div>
         <div class="footer-bottom">
-          <p>copyrigt &copy;2021 StackOverFlowers</p>
+            <p>copyrigt &copy;2021 StackOverFlowers</p>
         </div>
-      </footer>
-      <script src="/assets/JS/script3.js"></script>
+    </footer>
+    <script src="/assets/JS/script3.js"></script>
 </body>
+
 </html>
