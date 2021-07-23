@@ -18,32 +18,40 @@ setInterval(function(){
 
 
 
-const bienvenida = document.getElementById('bienvenida');
-
-function actualizarNombre(){
-    let name = prompt("Por favor Introduzca su nombre");
-    name = name.toLocaleLowerCase();
-    if(name===null || name===""){
-        validar();
-        alert("No ingreso autenticacion");
-    }
-    bienvenida.textContent="Bienvenido : " + "" + name;
-    localStorage.setItem("name",name);
-}
-
+const bienvenida = document.querySelector('#bienvenida');
+ 
+bienvenida.addEventListener('mouseout',()=>{
+ 
+        
+ 
+        let name = prompt("por favor ingrese su nombre");
+        if(name==null || name ==""){
+            bienvenida.textContent="Bienvenido" + " " + "Sin registrar"
+            return alert("no esta registrado");
+        }
+        
+        localStorage.setItem("nombre",name);
+ 
+        
+ 
+        
+        
+    
+    
+    
+    
+});
+ 
 function validar(){
     if(localStorage.getItem("name")){
-        bienvenida.textContent="Bienvenido : " + "" + localStorage.getItem("name");
+        bienvenida.textContent="Bienvenido" + " " + localStorage.getItem("name");
     }
-    else{
-        bienvenida.textContent="Bienvenido : " + "" + "sin autenticar";
+    if(localStorage.getItem("name")==null || localStorage.getItem==""){
+        bienvenida.textContent="Bienvenido" + " " + " " + "sin registrar";
     }
 }
-
+ 
 validar();
-
-actualizarNombre();
-
 
 
 
