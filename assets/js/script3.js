@@ -21,6 +21,4 @@ for(let i = 0 ; i<leer.length;i++){
             leer[i].classList.add("mystyle");
         }
     }
-}
-
-   
+}  
