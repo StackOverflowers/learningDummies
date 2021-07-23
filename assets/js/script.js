@@ -24,9 +24,9 @@ bienvenida.addEventListener('mouseout',()=>{
  
         
  
-        let name = prompt("por favor ingrese su nombre");
+        let name = prompt("Por favor ingrese su nombre");
         if(name==null || name ==""){
-            bienvenida.textContent="Bienvenido" + " " + "Sin registrar"
+            bienvenida.textContent="Bienvenido" + " " + "invitado"
             return alert("no esta registrado");
         }
         
