@@ -1,5 +1,5 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html lang="es">
   <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
@@ -10,16 +10,16 @@
     <link rel="stylesheet" href="./assets/css/estilos.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
-    <title>Hello, world!</title>
+    <title>Learning Dummies</title>
   </head>
   <body>
     
     <nav class="navbar navbar-expand-lg  bg-dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">StackOverflowers</a>
+          <a class="navbar-brand" href="#">Learning Dummies</a>
           <div class="bienvenido">
             <div>
-              <h6 class="bienvenida" id="bienvenida">Welcome :</h6>
+              <h6 class="bienvenida" id="bienvenida">Welcome:</h6>
             </div>
           </div>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -29,15 +29,16 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
               <li class="nav-item dropdown ">
                 <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Categorias
+                 Categorías
                 </a>
                 
                 <ul class="dropdown-menu categorias" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">HTML Y CSS</a></li>
-                  <li><a class="dropdown-item" href="#">JavaScript</a></li>
-                  <li><a class="dropdown-item" href="#">Bootstrap</a></li>
-                  <li><a class="dropdown-item" href="#">Algoritos y logica</a></li>
-                  <li><a class="dropdown-item" href="#">Repositorios</a></li>
+                  <li><a class="dropdown-item" href="./moduloHtmlCss.html" target="_blank">HTML Y CSS</a></li>
+                  <li><a class="dropdown-item" href="./javaScript.html" target="_blank">JavaScript</a></li>
+                  <li><a class="dropdown-item" href="./bootstrap.html" target="_blank">Bootstrap</a></li>
+                  <li><a class="dropdown-item" href="./logica.html" target="_blank">Lógica y algoritmia</a></li>
+                  <li><a class="dropdown-item" href="./repos.html" target="_blank">Repositorios</a></li>
+                  <li><a class="dropdown-item" href="./scrum.html" target="_blank">Scrum</a></li>
                 </ul>
               </li>
             </ul>
@@ -47,7 +48,7 @@
             </form>
           </div>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Cursos Favoritos</a>
+            <a class="nav-link active" aria-current="page" href="./favorites.html">Tips favoritos</a>
           </li>
         </div>
       </nav>
@@ -55,11 +56,9 @@
    <!-- Inicio del slider-->
 
     <section class="section1">
-
         <div class="slider">
             <div class="slides">
-                <!--BOTONESRADIO Inicio-->
-                
+                <!--BOTONESRADIO Inicio-->                
                 <input type="radio" name="radio-btn" id="radio1" class="radio1">
                 <input type="radio" name="radio-btn" id="radio2" class="radio2">
                 <input type="radio" name="radio-btn" id="radio3" class="radio3">
@@ -109,34 +108,32 @@
                     <label for="radio5" class="manual-btn"></label>
                     <label for="radio6" class="manual-btn"></label>
                 </div>
-                <!--navegacion manual Final-->
-
+                <!--Navegacion manual Final-->
         </div>
-
-
     </section>
 
+    <!--Start cards courses-->
     <section class="seccion1">
       <div class="contenedor">
         <div class="card" style="width: 18rem;">
           <img class="card-img-top boots" src="./assets/img/bootstrap-social-logo.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title boots">Bootstrap</h5>
-            <a href="./bootstrap.html" class="btn btn-primary bootstrap">Bootstrap</a>
+            <a href="./bootstrap.html" target="_blank" class="btn btn-primary bootstrap">Bootstrap</a>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="./assets/img/repo_card.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Repositorios</a>
-              <a href="./repos.html" class="btn btn-primary repositorios">Repositorios</a>
+              <a href="./repos.html" target="_blank" class="btn btn-primary repositorios">Repositorios</a>
           </div>
         </div>
         <div class="card" style="width: 18rem;">
           <img class="card-img-top" src="./assets/img/logicaCard.png" alt="Card image cap">
           <div class="card-body">
             <h5 class="card-title">Logica y Algoritmos</h5>
-            <a href="./logica.html" class="btn btn-primary logica">Logica y Algoritmos</a>
+            <a href="./logica.html" target="_blank" class="btn btn-primary logica">Logica y Algoritmos</a>
           </div>
         </div>   
       </div>
@@ -149,21 +146,21 @@
             <img class="card-img-top" src="./assets/img/javascript-logo.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">JavaScript</h5>
-              <a href="./javaScript.html" class="btn btn-primary js">Javascript</a>
+              <a href="./javaScript.html"  target="_blank" class="btn btn-primary js">Javascript</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
             <img class="card-img-top" src="./assets/img/cardHtml.png" alt="Card image cap">
             <div class="card-body">
               <h5 class="card-title">HTML Y CSS</h5>
-              <a href="./moduloHtmlCss.html" class="btn btn-primary logica">Go somewhere</a>
+              <a href="./moduloHtmlCss.html" target="_blank" class="btn btn-primary logica">HTML Y CSS</a>
             </div>
           </div>
           <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="..." alt="Card image cap">
+            <img class="card-img-top" src="./assets/img/Scrum_Logo.png" alt="Card image cap">
             <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <a href="#" class="btn btn-primary logica">HTML Y CSS</a>
+              <h5 class="card-title">SCRUM</h5>
+              <a href="./scrum.html" target="_blank" class="btn btn-primary logica">SCRUM</a>
             </div>
           </div>
       </section>
