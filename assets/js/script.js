@@ -47,7 +47,7 @@ function validar(){
         bienvenida.textContent="Bienvenido" + " " + localStorage.getItem("name");
     }
     if(localStorage.getItem("name")==null || localStorage.getItem==""){
-        bienvenida.textContent="Bienvenido" + " " + " " + "sin registrar";
+        bienvenida.textContent="Bienvenido" + " " + " " + "invitado";
     }
 }
  
