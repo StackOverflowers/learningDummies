@@ -43,15 +43,12 @@ bienvenida.addEventListener('mouseout',()=>{
 });
  
 function validar(){
-    if(localStorage.getItem("name")){
-        bienvenida.textContent="Bienvenido" + " " + localStorage.getItem("name");
+    if(localStorage.getItem("nombre")){
+        bienvenida.textContent="Bienvenido" + " " + localStorage.getItem("nombre");
     }
-    if(localStorage.getItem("name")==null || localStorage.getItem==""){
+    if(localStorage.getItem("nombre")==null || localStorage.getItem==""){
         bienvenida.textContent="Bienvenido" + " " + " " + "sin registrar";
     }
 }
  
 validar();
-
-
-
