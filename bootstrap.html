@@ -1,175 +1,298 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/estilosBlog.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/estilosBlog.css" />
+  </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg  bg-dark">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">StackOverflowers</a>
-            <div class="bienvenido">
-                <div>
-                    <h6 class="bienvenida" id="bienvenida"></h6>
-                </div>
-            </div>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                </ul>
-                <form class="d-flex">
-                    <input class="form-control me-2" type="search" placeholder="Buscador de tips" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Busca tips!</button>
-                </form>
-            </div>
-            <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Cursos Favoritos</a>
-            </li>
+  <body>
+    <nav class="navbar navbar-expand-lg bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">StackOverflowers</a>
+        <div class="bienvenido">
+          <div>
+            <h6 class="bienvenida" id="bienvenida"></h6>
+          </div>
         </div>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item dropdown"></li>
+          </ul>
+
+          <form class="d-flex">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Buscador de tips"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Busca tips!
+            </button>
+          </form>
+        </div>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#"
+            >Cursos Favoritos</a
+          >
+        </li>
+      </div>
     </nav>
     <section id="principal" class="principal">
-        <section id="publicaciones" class="publicaciones">
-            <article class="post">
-                <a href="" class="enlace-post">
-                    <h2 class="titulo">¿Qué es Boostrap?</h2>
-                </a>
-                <img src="./assets/img/boots12.jpg" alt="" class="img-post2">
-                <p>
-                    <strong>Por:</strong><span class="datos-publicaciones">Juan Manuel Huertas</span> &nbsp;;&nbsp;
-                    <strong>Fecha: </strong><span class="datos-publicaciones">Jueves 21 de julio</span>
-                </p>
-                <p class="parrafo-post">
-                    Bootstrap es uno de los Frameworks para desarrollo responsivo mas utlizados, y está compuesto por componentes pre fabricados o plantillas, para ahorrar trabajo en código y simplificar la creación
+      <section id="publicaciones" class="publicaciones">
+        <article class="post">
+          <a href="" class="enlace-post">
+            <h2 class="titulo">¿Qué es Boostrap?</h2>
+          </a>
+          <img src="./assets/img/boots12.jpg" alt="" class="img-post2" />
+          <p>
+            <strong>Por:</strong
+            ><span class="datos-publicaciones">Juan Manuel Huertas</span>
+            &nbsp;;&nbsp; <strong>Fecha: </strong
+            ><span class="datos-publicaciones">Jueves 21 de julio</span>
+          </p>
+          <p class="parrafo-post">
+            Bootstrap es uno de los Frameworks para desarrollo responsivo mas
+            utlizados, y está compuesto por componentes pre fabricados o
+            plantillas, para ahorrar trabajo en código y simplificar la creación
+          </p>
+          <button type="button" class="btn btn-warning leer">Ocultar</button>
+          &nbsp;&nbsp;
+          <span class="favoritos">Añadir A Favoritos</span>
+        </article>
+        <article class="post">
+          <a href="" class="enlace-post">
+            <h2 class="titulo">¿Que es Bootstrap 5?</h2>
+          </a>
+          <img src="./assets/img/boots13.jpg" alt="" class="img-post" />
+          <p>
+            <strong>Por:</strong
+            ><span class="datos-publicaciones">Juan Manuel Huertas</span>
+            &nbsp;;&nbsp; <strong>Fecha: </strong
+            ><span class="datos-publicaciones">Jueves 21 de julio</span>
+          </p>
+          <p class="parrafo-post">
+            Es una nueva versión de Bootstrap que elimina completamente JQuery,
+            para trabajar sobre Javascript puro, y trae varias características
+            como: <br /><br />
+            * Mejoría del sistema de cuadrícula <br />
+            * Documentación mas clara y completamente <br />
+            *Modularidad mejorada <br />
+            *Personalización mas simple
+          </p>
+          <button type="button" class="btn btn-warning leer">Ocultar</button>
+          &nbsp;&nbsp;
+          <span class="favoritos">Añadir A Favoritos</span>
+        </article>
+        <article class="post">
+          <a href="" class="enlace-post">
+            <h2 class="titulo">¿Como se instala Bootstrap 5?</h2>
+          </a>
+          <p>
+            <strong>Por:</strong
+            ><span class="datos-publicaciones">Juan Manuel Huertas</span>
+            &nbsp;;&nbsp; <strong>Fecha: </strong
+            ><span class="datos-publicaciones">Jueves 21 de julio</span>
+          </p>
+          <p class="parrafo-post">
+            Debes colocar en el Header, la siguiente linea: <br />
+            <br />
+            " link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+            crossorigin="anonymous>" < También debes colocar, justo antes de
+            terminar el body, el siguiente código: script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"
+          </p>
+          <button type="button" class="btn btn-warning leer">Ocultar</button>
+          &nbsp;&nbsp;
+          <span class="favoritos">Añadir A Favoritos</span>
+        </article>
+        <article class="post">
+          <a href="" class="enlace-post">
+            <h2 class="titulo">Consejos de colores</h2>
+          </a>
+          <p>
+            <strong>Por:</strong
+            ><span class="datos-publicaciones">Juan Manuel Huertas</span>
+            &nbsp;;&nbsp; <strong>Fecha: </strong
+            ><span class="datos-publicaciones">Jueves 21 de julio</span>
+          </p>
+          <p class="parrafo-post">
+            Boostrap tiene algunos colores predefinidos para facilitar la
+            personzalición del sitio<br />
+            por ejemplo, los colores que se usan para "acciones" serían:
+            <br /><br />
+            <img src="./assets/img/temas.jpg" alt="" /><br /><br />
+            Y para asignar colores en diferentes paletas de colores, podemos
+            usar: <br /><br />
+            <img src="./assets/img/colores1.jpg" alt="" /><br />
+            <img src="./assets/img/colores2.jpg" alt="" /><br />
+            <img src="./assets/img/colores3.jpg" alt="" /><br />
+            <img src="./assets/img/colores4.jpg" alt="" /><br />
+          </p>
+          <button type="button" class="btn btn-warning leer">Ocultar</button>
+          <span class="favoritos">Añadir A Favoritos</span>
+        </article>
+      </section>
 
-                </p>
-                <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
-                <span class="favoritos">Añadir A Favoritos</span>
-            </article>
-            <article class="post">
-                <a href="" class="enlace-post">
-                    <h2 class="titulo">¿Que es Bootstrap 5?</h2>
-                </a>
-                <img src="./assets/img/boots13.jpg" alt="" class="img-post">
-                <p>
-                    <strong>Por:</strong><span class="datos-publicaciones">Juan Manuel Huertas</span> &nbsp;;&nbsp;
-                    <strong>Fecha: </strong><span class="datos-publicaciones">Jueves 21 de julio</span>
-                </p>
-                <p class="parrafo-post">
-                    Es una nueva versión de Bootstrap que elimina completamente JQuery, para trabajar sobre Javascript puro, y trae varias características como: <br><br> * Mejoría del sistema de cuadrícula <br> * Documentación mas clara y completamente
-                    <br> *Modularidad mejorada <br> *Personalización mas simple
-
-                </p>
-                <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
-                <span class="favoritos">Añadir A Favoritos</span>
-            </article>
-            <article class="post">
-                <a href="" class="enlace-post">
-                    <h2 class="titulo">¿Como se instala Bootstrap 5?</h2>
-                </a>
-                <p>
-                    <strong>Por:</strong><span class="datos-publicaciones">Juan Manuel Huertas</span> &nbsp;;&nbsp;
-                    <strong>Fecha: </strong><span class="datos-publicaciones">Jueves 21 de julio</span>
-                </p>
-                <p class="parrafo-post">
-                    Debes colocar en el Header, la siguiente linea: <br> <br> "
-                     link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous>" <
-                     También debes colocar, justo antes de terminar el body, el siguiente código: 
-                     script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"
-                </p>
-                <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
-                <span class="favoritos">Añadir A Favoritos</span>
-            </article>
-            <article class="post">
-                <a href="" class="enlace-post">
-                    <h2 class="titulo">Consejos de colores</h2>
-                </a>
-                <p>
-                    <strong>Por:</strong><span class="datos-publicaciones">Juan Manuel Huertas</span> &nbsp;;&nbsp;
-                    <strong>Fecha: </strong><span class="datos-publicaciones">Jueves 21 de julio</span>
-                </p>
-                <p class="parrafo-post">
-                    Boostrap tiene algunos colores predefinidos para facilitar la personzalición del sitio<br> por ejemplo, los colores que se usan para "acciones" serían: <br><br>
-                    <img src="./assets/img/temas.jpg" alt=""><br><br> Y para asignar colores en diferentes paletas de colores, podemos usar: <br><br>
-                    <img src="./assets/img/colores1.jpg" alt=""><br>
-                    <img src="./assets/img/colores2.jpg" alt=""><br>
-                    <img src="./assets/img/colores3.jpg" alt=""><br>
-                    <img src="./assets/img/colores4.jpg" alt=""><br>
-
-                </p>
-                <button type="button" class="btn btn-warning leer">Ocultar</button>
-                <span class="favoritos">Añadir A Favoritos</span>
-            </article>
-
+      <section id="sidebar" class="sidebar">
+        <section id="buscar" class="buscar">
+          <h2 class="encabezado-sidebar">Buscar</h2>
+          <form action="">
+            <input type="text" name="buscar" placeholder="buscar" />
+            <button class="boton">Ok</button>
+          </form>
         </section>
-
-        <section id="sidebar" class="sidebar">
-            <section id="buscar" class="buscar">
-                <h2 class="encabezado-sidebar">Buscar</h2>
-                <form action="">
-                    <input type="text" name="buscar" placeholder="buscar">
-                    <button class="boton">Ok</button>
-                </form>
-            </section>
-            <section id="categorias" class="categorias">
-                <h2 class="encabezado-sidebar">Categorias</h2>
-                <a href="./moduloHtmlCss.html" class="enlace-sidebar">HTML Y CSS</a>
-                <a href="./javaScript.html" class="enlace-sidebar">Javascript</a>
-                <a href="./logica.html" class="enlace-sidebar">Logica y Algoritmia</a>
-                <a href="./bootstrap.html" class="enlace-sidebar">Bootstrap</a>
-                <a href="./repos.html" class="enlace-sidebar">Repositorios</a>
-                <a href="./scrum.html" class="enlace-sidebar">Scrum</a>
-            </section>
-            <section id="categorias" class="noticias">
-                <h2 class="encabezado-sidebar">Ultimas noticias</h2>
-                <a href="" class="enlace-sidebar">
-                    <h4>Titulo de la noticia</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae qui blanditiis sunt consequatur iure harum unde dolorum veniam! Asperiores nesciunt reprehenderit sapiente iste, excepturi doloribus fugiat ducimus animi totam illo.</p>
-
-                </a>
-                <a href="" class="enlace-sidebar">
-                    <h4>Titulo de la noticia</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae qui blanditiis sunt consequatur iure harum unde dolorum veniam! Asperiores nesciunt reprehenderit sapiente iste, excepturi doloribus fugiat ducimus animi totam illo.</p>
-
-                </a>
-                <a href="" class="enlace-sidebar">
-                    <h4>Titulo de la noticia</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae qui blanditiis sunt consequatur iure harum unde dolorum veniam! Asperiores nesciunt reprehenderit sapiente iste, excepturi doloribus fugiat ducimus animi totam illo.</p>
-
-                </a>
-                <a href="" class="enlace-sidebar">
-                    <h4>Titulo de la noticia</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quae qui blanditiis sunt consequatur iure harum unde dolorum veniam! Asperiores nesciunt reprehenderit sapiente iste, excepturi doloribus fugiat ducimus animi totam illo.</p>
-
-                </a>
-            </section>
+        <section id="categorias" class="categorias">
+          <h2 class="encabezado-sidebar">Categorias</h2>
+          <a href="./moduloHtmlCss.html" class="enlace-sidebar">HTML Y CSS</a>
+          <a href="./javaScript.html" class="enlace-sidebar">Javascript</a>
+          <a href="./logica.html" class="enlace-sidebar">Logica y Algoritmia</a>
+          <a href="./bootstrap.html" class="enlace-sidebar">Bootstrap</a>
+          <a href="./repos.html" class="enlace-sidebar">Repositorios</a>
+          <a href="./scrum.html" class="enlace-sidebar">Scrum</a>
         </section>
+        <section id="categorias" class="noticias">
+          <h2 class="encabezado-sidebar">Ultimas noticias</h2>
+          <a
+            href="https://www.europapress.es/portaltic/software/noticia-javascript-mantiene-lenguaje-programacion-mas-popular-14-millones-desarrolladores-20210430172721.html"
+            class="enlace-sidebar"
+          >
+            <h4>
+              Javascript se mantiene como el lenguaje de programación más
+              popular, con 14 millones de desarrolladores
+            </h4>
+            <p>
+              Javascript se mantiene como el lenguaje de programación más
+              popular, con 14 millones de desarrolladores El lenguaje de
+              programación Javascript es el más utilizado en la actualidad, y
+              casi 14 millones de desarrolladores en el mundo programan con él
+              especialmente en la web y para la nube, seguido de otros lenguajes
+              como Python, Java y C++. Así se extrae de la vigésima edición del
+              informe State of the Developer Nation, realizado por SlashData y
+              para el cual se han encuestado a más de 19.000 desarrolladores de
+              155 países entre noviembre de 2020 y febrero de 2021.
+            </p>
+          </a>
+          <a
+            href="https://jdevmanzo.medium.com/javascript-se-est%C3%A1-comiendo-el-mundo-3576e97f0dae"
+            class="enlace-sidebar"
+          >
+            <h4>Javascript se está comiendo el mundo</h4>
+            <p>
+              Si has oido las noticias ultimamente, Javascript y NodeJs se están
+              comiendo el mundo del software. NodeJs es un ambiente Backend
+              hecho con y para Javascript que corre en los motores V8 que
+              desarrolla y mantiene Google Chrome. Podríamos pensar que es una
+              tecnología “hipster”, pero NodeJs se está convirtiendo rápidamente
+              en uno de los ambientes más comunes para desarrollar aplicaciones
+              web y ya cuenta con una cantidad impresionante de Fans.
+              Personalmente no lo he usado tan a fondo como quisiera, pero
+              sencillamente me encanta y cada día quiero usarlo más. Si no me
+              crees, te dejo una lista de las 4 gigantes que adoptaron esta
+              tecnología Javascript/Nodejs que les permite poseer plataformas de
+              tráfico pesado y alta calidad de funcionamiento.
+            </p>
+          </a>
+          <a
+            href="https://mott.pe/noticias/lenguaje-de-programacion-de-javascript-para-desarrollo-web-front-end/"
+            class="enlace-sidebar"
+          >
+            <h4>
+              Lenguaje de programación de JavaScript para desarrollo web
+              front-end
+            </h4>
+            <p>
+              El desarrollo web front-end, se refiere a la creación de sitios
+              web y aplicaciones que utilizan varios lenguajes de programación
+              como Javascript, CSS y HTML5. Los expertos saben que Javascript,
+              es el responsable del contenido dinámico y la interactividad que
+              se pueden visualizar en los sitios web modernos. Esto incluye la
+              interfaz de usuario general, juegos, pancartas móviles y botones
+              en los que los usuarios pueden hacer clic e interactuar. Varios
+              servicios de desarrollo de Javascript, se especializan en este
+              lenguaje robusto. Con el avance y desarrollo de la tecnología, las
+              empresas también buscan alternativas de formas cada vez más
+              diversas para destacarse de la competencia. Javascript, es ideal
+              para contenido web dinámico, pero no es el único reproductor que
+              existe. A continuación te dejaremos 5 lenguajes de programación de
+              JavaScript para desarrollo web front-end, pero ten en cuenta que
+              no todos los idiomas que mencionaremos reemplazarán a JavaScript
+              en su totalidad, solo se complementan.
+            </p>
+          </a>
+          <a
+            href="https://www.tokioschool.com/noticias/java-significado-que-es-java/"
+            class="enlace-sidebar"
+          >
+            <h4>El significado de Java, el falso gemelo de JavaScript</h4>
+            <p>
+              Java es un lenguaje de programación y una plataforma informática
+              comercializada por primera vez en 1995 por Sun Microsystems”. Así
+              de fácil resume la propia web de Java qué es esta tecnología que
+              tantos éxitos le ha reportado a la compañía. Nació con el objetivo
+              de ser un lenguaje de programación de estructura sencilla que
+              pudiera ser ejecutado en diversos sistemas operativos. En lo que
+              respecta a su nombre, inicialmente iba a denominarse Oak pero,
+              como esta marca ya estaba registrada, se acabó optando por Java.
+            </p>
+          </a>
+        </section>
+      </section>
     </section>
 
     <footer>
-        <div class="footer-content">
-          <h3>StackOverFlowers</h3>
-          <p>Somos una pagina que busca impartir el conocimiento por medio de algunos tips utiles para que todo aquel con conocimientos basicos , pueda llevar su carrera profesional a otro nivel</p>
-          <ul class="socials">
-            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fab fa-git"></i></a></li>
-          </ul>
-        </div>
-        <div class="footer-bottom">
-          <p>copyrigt &copy;2021 StackOverFlowers</p>
-        </div>
-      </footer>
-    <script src="/assets/JS/script3.js"></script>
-</body>
-
+      <div class="footer-content">
+        <h3>StackOverFlowers</h3>
+        <p>
+          Somos una pagina que busca impartir el conocimiento por medio de
+          algunos tips utiles para que todo aquel con conocimientos basicos ,
+          pueda llevar su carrera profesional a otro nivel
+        </p>
+        <ul class="socials">
+          <li>
+            <a href=""><i class="fab fa-google-plus-g"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+          </li>
+          <li>
+            <a href=""><i class="fab fa-git"></i></a>
+          </li>
+        </ul>
+      </div>
+      <div class="footer-bottom">
+        <p>copyrigt &copy;2021 StackOverFlowers</p>
+      </div>
+    </footer>
+    <script src="./assets/JS/script3.js"></script>
+  </body>
 </html>
