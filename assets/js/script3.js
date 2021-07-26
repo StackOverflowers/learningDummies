@@ -1,5 +1,4 @@
-
-//obetengo por medio de queryselector todos los elementos en forma de array
+//obtengo por medio de queryselector todos los elementos en forma de array
 let leer = document.querySelectorAll('.leer');
 
 //por medio de un bucle for recorro todos los botones de la pagina

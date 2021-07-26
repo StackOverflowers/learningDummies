@@ -16,8 +16,7 @@ for(let i = 0 ; i<leer.length;i++){
         }//pero si si tiene el estilo block se oculta y cambia el texto del boton
         else{
             parrafos[i].style.display='none';
-            leer[i].textContent="Mostrar";
-            
+            leer[i].textContent="Mostrar";         
             leer[i].classList.add("mystyle");
         }
     }

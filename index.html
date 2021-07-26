@@ -1,198 +1,203 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="./assets/css/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Learning Dummies</title>
-  </head>
-  <body>
-    
-    <nav class="navbar navbar-expand-lg  bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">&nbsp; Learning Dummies</a>
-          <div class="bienvenido">
-            <div>
-              <h6 class="bienvenida" id="bienvenida">Welcome:</h6>
-            </div>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse " id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
-              <li class="nav-item dropdown ">
-                <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                 Categorías
-                </a>
-                
-                <ul class="dropdown-menu categorias" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="./moduloHtmlCss.html" target="_blank">HTML Y CSS</a></li>
-                  <li><a class="dropdown-item" href="./javaScript.html" target="_blank">JavaScript</a></li>
-                  <li><a class="dropdown-item" href="./bootstrap.html" target="_blank">Bootstrap</a></li>
-                  <li><a class="dropdown-item" href="./logica.html" target="_blank">Lógica y algoritmia</a></li>
-                  <li><a class="dropdown-item" href="./repos.html" target="_blank">Repositorios</a></li>
-                  <li><a class="dropdown-item" href="./scrum.html" target="_blank">Scrum</a></li>
-                </ul>
-              </li>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="./assets/css/estilos.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <title>Learning Dummies</title>
+</head>
+
+<body>
+
+  <nav class="navbar navbar-expand-lg  bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">&nbsp; Learning Dummies</a>
+      <div class="bienvenido">
+        <div>
+          <h6 class="bienvenida" id="bienvenida">Welcome:</h6>
+        </div>
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+          <li class="nav-item dropdown ">
+            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorías
+            </a>
+
+            <ul class="dropdown-menu categorias" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="./moduloHtmlCss.html" target="_blank">HTML Y CSS</a></li>
+              <li><a class="dropdown-item" href="./javaScript.html" target="_blank">JavaScript</a></li>
+              <li><a class="dropdown-item" href="./bootstrap.html" target="_blank">Bootstrap</a></li>
+              <li><a class="dropdown-item" href="./logica.html" target="_blank">Lógica y algoritmia</a></li>
+              <li><a class="dropdown-item" href="./repos.html" target="_blank">Repositorios</a></li>
+              <li><a class="dropdown-item" href="./scrum.html" target="_blank">Scrum</a></li>
             </ul>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Buscador de tips" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Ir</button>
-            </form>
-          </div>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./favorites.html">Tips favoritos</a>
           </li>
-        </div>
-      </nav>
-    
-   <!-- Inicio del slider-->
-
-    <section class="section1">
-        <div class="slider">
-            <div class="slides">
-                <!--BOTONESRADIO Inicio-->                
-                <input type="radio" name="radio-btn" id="radio1" class="radio1">
-                <input type="radio" name="radio-btn" id="radio2" class="radio2">
-                <input type="radio" name="radio-btn" id="radio3" class="radio3">
-                <input type="radio" name="radio-btn" id="radio4" class="radio4">
-                <input type="radio" name="radio-btn" id="radio5" class="radio5">
-                <input type="radio" name="radio-btn" id="radio6" class="radio6">
-                <!--BOTONESRADIO Final-->
-
-                <!--Slide imagen inicio-->
-                <div class="slide primero">
-                    <img src="./assets/img/repositorios1" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/Scrum_1.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/Sliderjs.jpg" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/Captura.PNG" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/bootstrap.png" alt="">
-                </div>
-                <div class="slide">
-                    <img src="./assets/img/algoritmia.jpg" alt="">
-                </div>
-                
-                <!--Slider imagen final-->
-                <!--navegacion automatica inicio-->
-                <div class="navegacion-automatica">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                    <div class="auto-btn5"></div>
-                    <div class="auto-btn6"></div>
-                </div>
-                <!--navegacion automatica Final-->
-            </div>
-                <!--navegacion manual inicio-->
-                <div class="navegacion-manual">
-                    <label for="radio1" class="manual-btn"></label>
-                    <label for="radio2" class="manual-btn"></label>
-                    <label for="radio3" class="manual-btn"></label>
-                    <label for="radio4" class="manual-btn"></label>
-                    <label for="radio5" class="manual-btn"></label>
-                    <label for="radio6" class="manual-btn"></label>
-                </div>
-                <!--Navegacion manual Final-->
-        </div>
-    </section>
-
-    <!--Start cards courses-->
-    <section class="seccion1">
-      <div class="contenedor">
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top boots" src="./assets/img/bootstrap-social-logo.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title boots">Bootstrap</h5>
-            <a href="./bootstrap.html" target="_blank" class="btn btn-primary bootstrap">IR A LOS TIPS</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="./assets/img/repo_card.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Repositorios</a>
-              <a href="./repos.html" target="_blank" class="btn btn-primary repositorios">IR A LOS TIPS</a>
-          </div>
-        </div>
-        <div class="card" style="width: 18rem;">
-          <img class="card-img-top" src="./assets/img/logicaCard.png" alt="Card image cap">
-          <div class="card-body">
-            <h5 class="card-title">Logica y Algoritmos</h5>
-            <a href="./logica.html" target="_blank" class="btn btn-primary logica">IR A LOS TIPS</a>
-          </div>
-        </div>   
+        </ul>
+        <form class="d-flex">
+          <input class="form-control me-2" type="search" placeholder="Buscador de tips" aria-label="Search">
+          <button class="btn btn-outline-success" type="submit">Ir</button>
+        </form>
       </div>
-      </section>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./favorites.html">Tips favoritos</a>
+      </li>
+    </div>
+  </nav>
 
-      
-      <section>
-        <div class="contenedor2">
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./assets/img/javascript-logo.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">JavaScript</h5>
-              <a href="./javaScript.html"  target="_blank" class="btn btn-primary js">IR A LOS TIPS</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./assets/img/cardHtml.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">HTML Y CSS</h5>
-              <a href="./moduloHtmlCss.html" target="_blank" class="btn btn-primary logica">IR A LOS TIPS</a>
-            </div>
-          </div>
-          <div class="card" style="width: 18rem;">
-            <img class="card-img-top" src="./assets/img/Scrum_Logo.png" alt="Card image cap">
-            <div class="card-body">
-              <h5 class="card-title">SCRUM</h5>
-              <a href="./scrum.html" target="_blank" class="btn btn-primary logica">IR A LOS TIPS</a>
-            </div>
-          </div>
-      </section>
+  <!-- Inicio del slider-->
 
-      
-      <div class="contenedor4">
-        <div class="jumbotron">
-          <h1 class="display-4">Albert Einstein.</h1>
-          <p class="lead">"La mente es como un paracaídas: sólo funciona si se abre."</p>
-          
+  <section class="section1">
+    <div class="slider">
+      <div class="slides">
+        <!--BOTONESRADIO Inicio-->
+        <input type="radio" name="radio-btn" id="radio1" class="radio1">
+        <input type="radio" name="radio-btn" id="radio2" class="radio2">
+        <input type="radio" name="radio-btn" id="radio3" class="radio3">
+        <input type="radio" name="radio-btn" id="radio4" class="radio4">
+        <input type="radio" name="radio-btn" id="radio5" class="radio5">
+        <input type="radio" name="radio-btn" id="radio6" class="radio6">
+        <!--BOTONESRADIO Final-->
+
+        <!--Slide imagen inicio-->
+        <div class="slide primero">
+          <img src="./assets/img/repositorios1" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/Scrum_1.png" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/Sliderjs.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/Captura.PNG" alt="">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/bootstrap.png" alt="Logo bootstrap">
+        </div>
+        <div class="slide">
+          <img src="./assets/img/algoritmia.jpg" alt="">
+        </div>
+
+        <!--Slider imagen final-->
+        <!--navegacion automatica inicio-->
+        <div class="navegacion-automatica">
+          <div class="auto-btn1"></div>
+          <div class="auto-btn2"></div>
+          <div class="auto-btn3"></div>
+          <div class="auto-btn4"></div>
+          <div class="auto-btn5"></div>
+          <div class="auto-btn6"></div>
+        </div>
+        <!--navegacion automatica Final-->
+      </div>
+      <!--navegacion manual inicio-->
+      <div class="navegacion-manual">
+        <label for="radio1" class="manual-btn"></label>
+        <label for="radio2" class="manual-btn"></label>
+        <label for="radio3" class="manual-btn"></label>
+        <label for="radio4" class="manual-btn"></label>
+        <label for="radio5" class="manual-btn"></label>
+        <label for="radio6" class="manual-btn"></label>
+      </div>
+      <!--Navegacion manual Final-->
+    </div>
+  </section>
+
+  <!--Start cards courses-->
+  <section class="seccion1">
+    <div class="contenedor">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top boots" src="./assets/img/bootstrap-social-logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title boots">Bootstrap</h5>
+          <a href="./bootstrap.html" target="_blank" class="btn btn-primary bootstrap">IR A LOS TIPS</a>
         </div>
       </div>
-
-      <footer>
-        <div class="footer-content">
-          <h3>StackOverFlowers</h3>
-          <p>Somos una pagina que busca impartir el conocimiento por medio de algunos tips utiles para que todo aquel con conocimientos basicos , pueda llevar su carrera profesional a otro nivel</p>
-          <ul class="socials">
-            <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-            <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href=""><i class="fab fa-git"></i></a></li>
-          </ul>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./assets/img/repo_card.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Repositorios</a>
+            <a href="./repos.html" target="_blank" class="btn btn-primary repositorios">IR A LOS TIPS</a>
         </div>
-        <div class="footer-bottom">
-          <p>copyrigt &copy;2021 StackOverFlowers</p>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./assets/img/logicaCard.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">Logica y Algoritmos</h5>
+          <a href="./logica.html" target="_blank" class="btn btn-primary logica">IR A LOS TIPS</a>
         </div>
-      </footer>
+      </div>
+    </div>
+  </section>
 
-    <script src="/assets/JS/script3.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-    <script src="./assets/js/script.js"></script>
+  <section>
+    <div class="contenedor2">
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./assets/img/javascript-logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">JavaScript</h5>
+          <a href="./javaScript.html" target="_blank" class="btn btn-primary js">IR A LOS TIPS</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./assets/img/cardHtml.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">HTML Y CSS</h5>
+          <a href="./moduloHtmlCss.html" target="_blank" class="btn btn-primary logica">IR A LOS TIPS</a>
+        </div>
+      </div>
+      <div class="card" style="width: 18rem;">
+        <img class="card-img-top" src="./assets/img/Scrum_Logo.png" alt="Card image cap">
+        <div class="card-body">
+          <h5 class="card-title">SCRUM</h5>
+          <a href="./scrum.html" target="_blank" class="btn btn-primary logica">IR A LOS TIPS</a>
+        </div>
+      </div>
+  </section>
 
-  
-  </body>
+  <div class="contenedor4">
+    <div class="jumbotron">
+      <h1 class="display-4">Albert Einstein.</h1>
+      <p class="lead">"La mente es como un paracaídas: sólo funciona si se abre."</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-content">
+      <h3>StackOverFlowers</h3>
+      <p>Somos una pagina que busca impartir el conocimiento por medio de algunos tips utiles para que todo aquel con
+        conocimientos basicos , pueda llevar su carrera profesional a otro nivel</p>
+      <ul class="socials">
+        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fab fa-git"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyrigt &copy;2021 StackOverFlowers</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+
+
+</body>
+
 </html>
