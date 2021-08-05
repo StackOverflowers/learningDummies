@@ -102,13 +102,13 @@ const activar = (opcion) => {
         negativos += 1;
         nuevaPregunta();
     }
-    if (contador == 5) {
+    if (contador == 3) {
         pregunta.innerHTML = " ¿Quieres volver a jugar? ";
         btnA.innerHTML = " si, Oprime click para comenzar";
         btnB.innerHTML = " si, Oprime click para comenzar ";
         btnC.innerHTML = " si, Oprime click para comenzar ";
         btnD.innerHTML = " si, Oprime click para comenzar ";
-        alert(" PUNTAJE : " + puntos + "/5" +
+        alert(" PUNTAJE : " + puntos + "/3" +
             "\n Respuestas correctas : " + puntos + " Respuestas incorrectas : " + negativos);
         contador = 0;
         puntos = 0;
