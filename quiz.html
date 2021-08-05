@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Quiz </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="stylesheet" href="./assets/CSS/estilosblog.css" />
+</head>
+
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html">Learning Dummies</a>
+            <div class="bienvenido">
+                <div>
+                    <h6 class="bienvenida" id="bienvenida"></h6>
+                </div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item dropdown"></li>
+                </ul>
+            </div>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="./favorites.html">Tips favoritos</a>
+            </li>
+        </div>
+    </nav>
+    <section id="principal" class="principal">
+        <section id="publicaciones" class="publicaciones">
+            <article class="post">
+                <a href="" class="enlace-post">
+                    <h2 class="titulo">¿Listo para un quiz?</h2>
+                </a>
+                <img src="./assets/img/quiz.jpg" alt="Imagen con texto QUIZ TIME" class="img-post" />
+
+
+                <div class="container-grid">
+
+                    <div class="grid-pregunta">
+                        <h4 id="pregunta"> Pregunta ¿ DOS CERO DOS CUATRO ? </h4>
+                    </div>
+                    <P>
+                    <div> <button id="btnA"> A. 2024 </button> </div>
+                    </P>
+                    <p>
+                    <div> <button id="btnB"> B. 0044 </button> </div>
+                    </P>
+                    <P>
+                    <div> <button id="btnC"> C. 0024 </button> </div>
+                    </p>
+                    <p>
+                    <div> <button id="btnD"> D. 2044 </button> </div>
+                    </P>
+
+                </div>
+
+                <P><button id="btnStart" class="btnStar">
+                        CLick para Comenzar
+                    </button></P>
+
+                <p>
+                    <strong>Por:</strong><span class="datos-publicaciones">StackOverFlowers</span>
+                    &nbsp;;&nbsp;
+                    <strong>Fecha: </strong><span class="datos-publicaciones1">Martes 03 de Agosto </span>
+                </p>
+
+
+                <!-- 
+          <button type="button" class="btn btn-warning leer">Ocultar</button>
+          &nbsp;&nbsp;
+          <span class="favoritos">Añadir A Favoritos</span>
+           -->
+
+            </article>
+
+
+
+
+        </section>
+        <section id="sidebar" class="sidebar">
+            <section id="buscar" class="buscar">
+                <h2 class="encabezado-sidebar">Buscar</h2>
+                <form action="">
+                    <input type="text" name="buscar" placeholder="buscar" />
+                    <button class="boton">Ok</button>
+                </form>
+            </section>
+            <section id="categorias" class="categorias">
+                <h2 class="encabezado-sidebar">Categorias</h2>
+                <a href="./moduloHtmlCss.html" class="enlace-sidebar">HTML Y CSS</a>
+                <a href="./javaScript.html" class="enlace-sidebar">Javascript</a>
+                <a href="./logica.html" class="enlace-sidebar">Logica y Algoritmia</a>
+                <a href="./bootstrap.html" class="enlace-sidebar">Bootstrap</a>
+                <a href="./repos.html" class="enlace-sidebar">Repositorios</a>
+                <a href="./scrum.html" class="enlace-sidebar">Scrum</a>
+            </section>
+            <section id="categorias" class="noticias">
+                <h2 class="encabezado-sidebar">Ultimas noticias</h2>
+                <a
+                  href="https://www.europapress.es/portaltic/software/noticia-javascript-mantiene-lenguaje-programacion-mas-popular-14-millones-desarrolladores-20210430172721.html"
+                  class="enlace-sidebar"
+                >
+                  <h4>
+                    Javascript se mantiene como el lenguaje de programación más
+                    popular, con 14 millones de desarrolladores
+                  </h4>
+                  <p>
+                    Javascript se mantiene como el lenguaje de programación más
+                    popular, con 14 millones de desarrolladores El lenguaje de
+                    programación Javascript es el más utilizado en la actualidad, y
+                    casi 14 millones de desarrolladores en el mundo programan con él
+                    especialmente en la web y para la nube, seguido de otros lenguajes
+                    como Python, Java y C++. Así se extrae de la vigésima edición del
+                    informe State of the Developer Nation, realizado por SlashData y
+                    para el cual se han encuestado a más de 19.000 desarrolladores de
+                    155 países entre noviembre de 2020 y febrero de 2021.
+                  </p>
+                </a>
+                
+              </section>
+        </section>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>StackOverFlowers</h3>
+            <p>
+                Somos una pagina que busca impartir el conocimiento por medio de
+                algunos tips utiles , para que todo aquel con conocimientos basicos ,
+                pueda llevar su carrera profesional a otro nivel
+            </p>
+            <ul class="socials">
+                <li>
+                    <a href=""><i class="fab fa-google-plus-g"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href=""><i class="fab fa-git"></i></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>copyrigt &copy;2021 StackOverFlowers</p>
+        </div>
+    </footer>
+    <script src="./assets/js/"></script>
+    <script src="./assets/js/quiz.js"></script>
+</body>
+
+</html>

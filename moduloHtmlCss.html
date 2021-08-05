@@ -38,18 +38,20 @@
   <section id="principal" class="principal">
     <section id="publicaciones" class="publicaciones">
       <article class="post">
-        <a href="" class="enlace-post"><h2 id="tip1" class="titulo">Estructura básica de una Web</h2></a>
+        <a href="" class="enlace-post">
+          <h2 id="tip1" class="titulo">Estructura básica de una Web</h2>
+        </a>
         <img src="./assets/img/html1.png" alt="" class="img-post">
         <p>
-            <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
-            &nbsp;;&nbsp;
-            <strong>Fecha: 22/07/2021 </strong><span class="datos-publicaciones1">Viernes 22 de julio</span>
+          <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
+          &nbsp;;&nbsp;
+          <strong>Fecha: 22/07/2021 </strong><span class="datos-publicaciones1">Viernes 22 de julio</span>
         </p>
         <p class="parrafo-post">
-            Html tiene una estructura base que se puede encontrar en la gran mayoría de sitios web. <br>
-             Un ejemplo de lo mínimo que tiene que tener:<br>
-             <textarea class= "areaText"id="codigoBasico" cols="64" rows="15" style="border:solid 3px rgb(110, 110, 110);">
-           
+          Html tiene una estructura base que se puede encontrar en la gran mayoría de sitios web. <br>
+          Un ejemplo de lo mínimo que tiene que tener:<br>
+          <textarea class="areaText" id="codigoBasico" cols="64" rows="15" style="border:solid 3px rgb(110, 110, 110);">
+
 <!DOCTYPE html>  Tipo de documento
 <html lang="en"> Idioma
 <head>
@@ -63,157 +65,183 @@ Aqui va todo el contenido de nuestra página
 </body>
 </html>
                                    </textarea> <br>
-            Nótese que dentro del head esta la configuracion que va a tener el documento con el navegador y 
-            este deberia permanecer casi intacto para las siguientes paginas que diseñemos. Dentro del body se situa 
-            todo lo que podremos ver en nuestra pagina, cada etiqueta tiene un fin y el hecho de que se vea como queremos 
-            no significa que este bien hecho en terminos de codigo.
+          Nótese que dentro del head esta la configuracion que va a tener el documento con el navegador y
+          este deberia permanecer casi intacto para las siguientes paginas que diseñemos. Dentro del body se situa
+          todo lo que podremos ver en nuestra pagina, cada etiqueta tiene un fin y el hecho de que se vea como queremos
+          no significa que este bien hecho en terminos de codigo.
 
         </p>
         <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
         <span class="favoritos">Añadir A Favoritos</span>
-    </article>
+      </article>
       <article class="post">
-        <a href="" class="enlace-post"><h2 id="tip2" class="titulo">Cierra todo lo que abras</h2></a>
-                <img src="./assets/img/html2.png" alt="" class="img-post">
-                <p>
-                    <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
-                    &nbsp;;&nbsp;
-                    <strong>Fecha: </strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
-                </p>
-                <p class="parrafo-post">
-                  HTML al ser un lenguaje de etiquetas, tiene que reconocer que informacion contiene 
-                  cada etiqueta, para esto, se utilizan los corchetes. A continuacion un pequeño ejemplo. <br><br>
-                    <textarea class= "areaText"id="codigoBasico" cols="62" rows="6" style="border:solid 3px rgb(110, 110, 110);">
+        <a href="" class="enlace-post">
+          <h2 id="tip2" class="titulo">Cierra todo lo que abras</h2>
+        </a>
+        <img src="./assets/img/html2.png" alt="" class="img-post">
+        <p>
+          <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
+          &nbsp;;&nbsp;
+          <strong>Fecha: </strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
+        </p>
+        <p class="parrafo-post">
+          HTML al ser un lenguaje de etiquetas, tiene que reconocer que informacion contiene
+          cada etiqueta, para esto, se utilizan los corchetes. A continuacion un pequeño ejemplo. <br><br>
+          <textarea class="areaText" id="codigoBasico" cols="62" rows="6" style="border:solid 3px rgb(110, 110, 110);">
 <p> Etiqueta de apertura de tipo Parrafo
 Aqui va el contenido de esta etiqueta
 </p> Hasta aquí va el contenido de esta etiqueta
 Siempre debemos cerrar las etiquetas usando </>                 
                       
                                           </textarea> <br>
-               
-                  Sin embargo hay algunas etiquetas en especifico que no necesitan ser cerradas. A este tipo de etiquetas se les llama "Elementos vacios".
-                      <br>
-                      Estos son algunos de los elementos vacios más utilizados:
-                      <ul>  
-                          <li><code>< br ></code> Salto de linea </li>
-                          <li><code>< img ></code> Insertar imagen </li>
-                          <li><code>< input ></code> Tomar un dato del usuario </li>
-                          <li><code>< hr ></code> Crea una linea horizontal</li>
-                          <li><code>< link ></code> Define la relacion entre el html y algun archivo externo </li>
-                      </ul>
 
-                                         
-                </p>
-              </p>
-                <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
-               <span class="favoritos">Añadir A Favoritos</span>
-              </article>
-               <article class="post">
-                <a href="" class="enlace-post"><h2 id="tip3" class="titulo">CSS en archivo externo y carpeta aparte</h2></a>
-                <img src="./assets/img/html3.png" alt="" class="img-post">
-                <p>
-                    <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
-                    &nbsp;;&nbsp;
-                    <strong>Fecha: 21/07/2021</strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
-                </p>
-                <p class="parrafo-post">
-                  No conviene incluir el código CSS en la sección de <code>< head ></code> del propio HTML. Hay multiples razones para evitar esta práctica.
-                  Empezemos por que es mas confuso de leer, esto implica que cuando se quiera modificar la página, tome mucho mas tiempo del que debiera. En segundo lugar,
-                  si quieres aplicar los mismos estilos y diseño de pagina a alguna otra página, tendrias que copiar los estilos de cada elemento individualmente, lo cual 
-                  implica mucho más trabajo. En tercer lugar, aconsejo que se le de una carpeta exclusiva al archivo de estilos y que esté bien referenciada
-                   haciendo uso de ./ para encontrar el directorio relativo indicado.<br>
-                </p>
-                <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
-                <span class="favoritos">Añadir A Favoritos</span>
-            </article>
-            <article class="post">
-              <a href="" class="enlace-post"><h2 id="tip4" class="titulo">Usa DIVs en lugar de tablas</h2></a>
-              <img src="./assets/img/html4.png" alt="" class="img-post">
-              <p>
-                  <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
-                  &nbsp;;&nbsp;
-                  <strong>Fecha: 21/07/2021 </strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
-              </p>
-              <p class="parrafo-post">
-                La tendencia de desarrollo actual, obliga a la utilización de DIVs en lugar de tablas, 
-                cuando estructuramos los contenidos de nuestro documento HTML. <br>
-                Esto nos permite aplicar los diseños de CSS de una forma mucho más efectiva, 
-                y a su vez, garantizará la compatibilidad (aspecto y funcionalidad relacionada al navegador)
-                 y escalabilidad (capacidad de adaptación y respuesta de un sistema con respecto al rendimiento
-                del mismo a medida que aumentan de forma significativa el número de usuarios del mismo.) de nuestro sitio
-                web en diferentes dispositivos móviles y navegadores.
-              </p>
-              <button type="button" class="btn btn-warning leer">Ocultar</button> 
-              <span class="favoritos">Añadir A Favoritos</span>
-          </article>  
-          <article class="post">
-            <a href="" class="enlace-post"><h2 class="titulo">Ordena tu código</h2></a>
-            <img src="./assets/img/html5.png" alt="" class="img-post">
-            <p>
-                <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
-                &nbsp;;&nbsp;
-                <strong>Fecha: 21/07/2021</strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
-            </p>
-            <p class="parrafo-post">
-              A veces cuando estamos muy emocionados codificando, no nos damos cuenta y vamos creando un codigo desordenado, 
-              que aunque en el momento lo entendamos a la perfección, en un par de días que no estés trabajando en tu sitio web 
-              ya no vas a entenderlo tan bien como antes. Si estas trabajando en un equipo, nadie aparte de ti va a lograr entender 
-              tu código lo que supone muchos problemas. Hay herramientas muy sencillas que nos ayudan a ordenar nuestro código, 
-              en Visual Studio Code hay una extension llamada "Prettier format" que con solo dar click derecho y "format" ya se nos 
-              ordena el codigo siguiendo las normas de diseño de paginas web. A su vez, es muy importante ir dejando comentarios 
-              para futuros desarrolladores y para ti mismo. Para dejar comentarios usa la etiqueta <code>< !-- Aqui van tus comentarios --></code>
-          </p>
-            <button type="button" class="btn btn-warning leer">Ocultar</button>
-            <span class="favoritos">Añadir A Favoritos</span>
-        </article>
-        <!--NUEVO TIP 1 -->
-        <article class="post">
-          <a href="" class="enlace-post"><h2 class="titulo">Algunas de las etiquetas de estilos más usadas</h2></a>
-          <img src="./assets/img/html6.png" alt="" class="img-post">
-          <p>
-              <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
-              &nbsp;;&nbsp;
-              <strong>Fecha: 03/08/2021</strong><span class="datos-publicaciones1">Martes 03 de Agosto</span>
-          </p>
-          <p class="parrafo-post">
-            Ahora que sabemos como añadir un archivo de estilos externos a nuestro proyecto y crear una referencia del mismo en
-            nuestro archivo html, podemos entrar a hablar de las etiquetas más usadas y mas básicas para crear una previsualización de 
-            lo que seria nuestro sitio web. <br> <br>
-            <code> font-weight: bold </code> Pone en negrilla el texto de la etiqueta <br>
-            <code> font-color: #color </code> Añade un color a eleccion especificamente al texto que tenga el elemento <br>
-            <code> border: solid </code> Añade un borde solido (hay diferentes tipos de bordes) al borde del elemento <br>
-            <code> background-color: #color </code> Añade un color al fondo de la etiqueta <br>
-            <code> color: #color </code> Añade un color al texto del elemento <br>
-            <code> padding: 10px </code> Añade espacio entre el contenido de la etiqueta y el borde, tambien puedes utilizar
-             padding-left, padding-right, padding-top y padding-bottom para añadir espacio entre el contenido y el borde izquierdo, derecho, superior e inferior respectivamente <br>
+          Sin embargo hay algunas etiquetas en especifico que no necesitan ser cerradas. A este tipo de etiquetas se les
+          llama "Elementos vacios".
+          <br>
+          Estos son algunos de los elementos vacios más utilizados:
+        <ul>
+          <li><code>< br ></code> Salto de linea </li>
+          <li><code>< img ></code> Insertar imagen </li>
+          <li><code>< input ></code> Tomar un dato del usuario </li>
+          <li><code>< hr ></code> Crea una linea horizontal</li>
+          <li><code>< link ></code> Define la relacion entre el html y algun archivo externo </li>
+        </ul>
+
+
         </p>
-          <button type="button" class="btn btn-warning leer">Ocultar</button>
-          <span class="favoritos">Añadir A Favoritos</span>
+        </p>
+        <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
+        <span class="favoritos">Añadir A Favoritos</span>
+      </article>
+      <article class="post">
+        <a href="" class="enlace-post">
+          <h2 id="tip3" class="titulo">CSS en archivo externo y carpeta aparte</h2>
+        </a>
+        <img src="./assets/img/html3.png" alt="" class="img-post">
+        <p>
+          <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
+          &nbsp;;&nbsp;
+          <strong>Fecha: 21/07/2021</strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
+        </p>
+        <p class="parrafo-post">
+          No conviene incluir el código CSS en la sección de <code>< head ></code> del propio HTML. Hay multiples
+          razones para evitar esta práctica.
+          Empezemos por que es mas confuso de leer, esto implica que cuando se quiera modificar la página, tome mucho
+          mas tiempo del que debiera. En segundo lugar,
+          si quieres aplicar los mismos estilos y diseño de pagina a alguna otra página, tendrias que copiar los estilos
+          de cada elemento individualmente, lo cual
+          implica mucho más trabajo. En tercer lugar, aconsejo que se le de una carpeta exclusiva al archivo de estilos
+          y que esté bien referenciada
+          haciendo uso de ./ para encontrar el directorio relativo indicado.<br>
+        </p>
+        <button type="button" class="btn btn-warning leer">Ocultar</button> &nbsp;&nbsp;
+        <span class="favoritos">Añadir A Favoritos</span>
+      </article>
+      <article class="post">
+        <a href="" class="enlace-post">
+          <h2 id="tip4" class="titulo">Usa DIVs en lugar de tablas</h2>
+        </a>
+        <img src="./assets/img/html4.png" alt="" class="img-post">
+        <p>
+          <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
+          &nbsp;;&nbsp;
+          <strong>Fecha: 21/07/2021 </strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
+        </p>
+        <p class="parrafo-post">
+          La tendencia de desarrollo actual, obliga a la utilización de DIVs en lugar de tablas,
+          cuando estructuramos los contenidos de nuestro documento HTML. <br>
+          Esto nos permite aplicar los diseños de CSS de una forma mucho más efectiva,
+          y a su vez, garantizará la compatibilidad (aspecto y funcionalidad relacionada al navegador)
+          y escalabilidad (capacidad de adaptación y respuesta de un sistema con respecto al rendimiento
+          del mismo a medida que aumentan de forma significativa el número de usuarios del mismo.) de nuestro sitio
+          web en diferentes dispositivos móviles y navegadores.
+        </p>
+        <button type="button" class="btn btn-warning leer">Ocultar</button>
+        <span class="favoritos">Añadir A Favoritos</span>
+      </article>
+      <article class="post">
+        <a href="" class="enlace-post">
+          <h2 class="titulo">Ordena tu código</h2>
+        </a>
+        <img src="./assets/img/html5.png" alt="" class="img-post">
+        <p>
+          <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
+          &nbsp;;&nbsp;
+          <strong>Fecha: 21/07/2021</strong><span class="datos-publicaciones1">Jueves 21 de julio</span>
+        </p>
+        <p class="parrafo-post">
+          A veces cuando estamos muy emocionados codificando, no nos damos cuenta y vamos creando un codigo desordenado,
+          que aunque en el momento lo entendamos a la perfección, en un par de días que no estés trabajando en tu sitio
+          web
+          ya no vas a entenderlo tan bien como antes. Si estas trabajando en un equipo, nadie aparte de ti va a lograr
+          entender
+          tu código lo que supone muchos problemas. Hay herramientas muy sencillas que nos ayudan a ordenar nuestro
+          código,
+          en Visual Studio Code hay una extension llamada "Prettier format" que con solo dar click derecho y "format" ya
+          se nos
+          ordena el codigo siguiendo las normas de diseño de paginas web. A su vez, es muy importante ir dejando
+          comentarios
+          para futuros desarrolladores y para ti mismo. Para dejar comentarios usa la etiqueta
+          <code>< !-- Aqui van tus comentarios --></code>
+        </p>
+        <button type="button" class="btn btn-warning leer">Ocultar</button>
+        <span class="favoritos">Añadir A Favoritos</span>
+      </article>
+      <!--NUEVO TIP 1 -->
+      <article class="post">
+        <a href="" class="enlace-post">
+          <h2 class="titulo">Algunas de las etiquetas de estilos más usadas</h2>
+        </a>
+        <img src="./assets/img/html6.png" alt="" class="img-post">
+        <p>
+          <strong>Por:</strong><span class="datos-publicaciones">Julian Rodriguez</span>
+          &nbsp;;&nbsp;
+          <strong>Fecha: 03/08/2021</strong><span class="datos-publicaciones1">Martes 03 de Agosto</span>
+        </p>
+        <p class="parrafo-post">
+          Ahora que sabemos como añadir un archivo de estilos externos a nuestro proyecto y crear una referencia del
+          mismo en
+          nuestro archivo html, podemos entrar a hablar de las etiquetas más usadas y mas básicas para crear una
+          previsualización de
+          lo que seria nuestro sitio web. <br> <br>
+          <code> font-weight: bold </code> Pone en negrilla el texto de la etiqueta <br>
+          <code> font-color: #color </code> Añade un color a eleccion especificamente al texto que tenga el elemento
+          <br>
+          <code> border: solid </code> Añade un borde solido (hay diferentes tipos de bordes) al borde del elemento <br>
+          <code> background-color: #color </code> Añade un color al fondo de la etiqueta <br>
+          <code> color: #color </code> Añade un color al texto del elemento <br>
+          <code> padding: 10px </code> Añade espacio entre el contenido de la etiqueta y el borde, tambien puedes
+          utilizar
+          padding-left, padding-right, padding-top y padding-bottom para añadir espacio entre el contenido y el borde
+          izquierdo, derecho, superior e inferior respectivamente <br>
+        </p>
+        <button type="button" class="btn btn-warning leer">Ocultar</button>
+        <span class="favoritos">Añadir A Favoritos</span>
       </article>
 
     </section>
 
     <section id="sidebar" class="sidebar">
       <section id="buscar" class="buscar">
-          <h2 class="encabezado-sidebar">Buscar</h2>
-          <form action="">
-              <input type="text" name="buscar" placeholder="buscar">
-              <button class="boton">Ok</button>
-          </form>
+        <h2 class="encabezado-sidebar">***Buscar***</h2>
+        <form action="">
+          <input type="text" name="buscar" placeholder="buscar">
+          <button class="boton">Ok</button>
+        </form>
       </section>
       <section id="categorias" class="categorias">
-          <h2 class="encabezado-sidebar">Categorias</h2>
-          <a href="./moduloHtmlCss.html" class="enlace-sidebar">HTML Y CSS</a>
-          <a href="./javaScript.html" class="enlace-sidebar">Javascript</a>
-          <a href="./logica.html" class="enlace-sidebar">Logica y Algoritmia</a>
-          <a href="./bootstrap.html" class="enlace-sidebar">Bootstrap</a>
-          <a href="./repos.html" class="enlace-sidebar">Repositorios</a>
-          <a href="./scrum.html" class="enlace-sidebar">Scrum</a>
+        <h2 class="encabezado-sidebar">***Categorias***</h2>
+        <a href="./moduloHtmlCss.html" class="enlace-sidebar">HTML Y CSS</a>
+        <a href="./javaScript.html" class="enlace-sidebar">Javascript</a>
+        <a href="./logica.html" class="enlace-sidebar">Logica y Algoritmia</a>
+        <a href="./bootstrap.html" class="enlace-sidebar">Bootstrap</a>
+        <a href="./repos.html" class="enlace-sidebar">Repositorios</a>
+        <a href="./scrum.html" class="enlace-sidebar">Scrum</a>
       </section>
       <div class="categorias sidebar" style="margin-right: 10px;">
-        <div class="encabezado-sidebar">
-          Últimos tips añadidos
-        </div>
+        <div class="encabezado-sidebar"><p>***Últimos tips añadidos***
+        </div></p>
+          
         <ul class="list-group list-group-flush">
           <li class="list-group-item"><a href="#tip1">Estructura básica de una web</a></li>
           <li class="list-group-item"><a href="#tip2">Cierra todo lo que abras</a></li>
@@ -222,25 +250,35 @@ Siempre debemos cerrar las etiquetas usando </>
           <li class="list-group-item"><a href="#tip5">Ordena tu código y deja comentarios</a></li>
         </ul>
       </div>
-      <!-- ULTIMOS TIPS -->
-  </section>
-</section>
 
-<footer>
-  <div class="footer-content">
-    <h3>StackOverFlowers</h3>
-    <p>Somos una pagina que busca impartir el conocimiento por medio de algunos tips utiles para que todo aquel con conocimientos basicos , pueda llevar su carrera profesional a otro nivel</p>
-    <ul class="socials">
-      <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
-      <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
-      <li><a href=""><i class="fab fa-git"></i></a></li>
-    </ul>
-  </div>
-  <div class="footer-bottom">
-    <p>copyrigt &copy;2021 StackOverFlowers</p>
-  </div>
-</footer>
-<script src="./assets/JS/script3.js"></script>
+      <div class="categorias sidebar" style="margin-right: 10px;">
+        <div class="encabezado-sidebar"><p>***¿Quieres medir tus conocimientos***</p>
+          
+        </div>
+        <ul class="list-group list-group-flush">
+          <li class="list-group-item"><a href="./quiz.html">¡Ingresa aquí!</a></li>
+        </ul>
+      </div>
+      <!-- ULTIMOS TIPS -->
+    </section>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>StackOverFlowers</h3>
+      <p>Somos una pagina que busca impartir el conocimiento por medio de algunos tips utiles para que todo aquel con
+        conocimientos basicos , pueda llevar su carrera profesional a otro nivel</p>
+      <ul class="socials">
+        <li><a href=""><i class="fab fa-google-plus-g"></i></a></li>
+        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fab fa-git"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>copyrigt &copy;2021 StackOverFlowers</p>
+    </div>
+  </footer>
+  <script src="./assets/JS/script3.js"></script>
 </body>
 
 </html>
