@@ -16,24 +16,26 @@ setInterval(function () {
 }, 5000);
 
 const bienvenida = document.querySelector("#bienvenida");
+const bienveniDiv = document.querySelector("#bienveniDiv");
 
-bienvenida.addEventListener("mouseout", () => {
-  let name = prompt("por favor ingrese su nombre");
+bienveniDiv.addEventListener("click", function () {
+  let name = prompt("Por favor ingrese su nuevo nombre de usuario");
+  localStorage.setItem("nombre", name);
   if (name == null || name == "") {
     bienvenida.textContent = "Bienvenido" + " " + "Sin registrar";
-    return alert("no esta registrado");
+  } else {
+    bienvenida.textContent = "Bienvenido " + localStorage.getItem("nombre");
   }
-
-  localStorage.setItem("nombre", name);
 });
 
 function validar() {
   if (localStorage.getItem("nombre")) {
-    bienvenida.textContent =
-      "Bienvenido" + " " + localStorage.getItem("nombre");
+    bienvenida.textContent = "Bienvenido " + localStorage.getItem("nombre");
   }
   if (localStorage.getItem("nombre") == null || localStorage.getItem == "") {
-    bienvenida.textContent = "Bienvenido" + " " + " " + "sin registrar";
+    let name = prompt("Por favor ingrese su nombre");
+    localStorage.setItem("nombre", name);
+    bienvenida.textContent = "Bienvenido " + localStorage.getItem("nombre");
   }
 }
 
