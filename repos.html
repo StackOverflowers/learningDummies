@@ -48,9 +48,9 @@
         
                             <div class="card mb-3 post" id="1">
                                 <div class="card-body">
-                                    <h5 class="card-title" >Ten a la mano un resumen de los comandos más usados</h5>
+                                    <h5 class="card-title" id="t7">Ten a la mano un resumen de los comandos más usados</h5>
                                     <img src="./assets/img/repo1.png" alt="Imagen con título Git Cheat Sheet" class="">
-                                    <p class="parrafo-post" >
+                                    <p class="parrafo-post" id="p7" >
                                         Los «Cheat Sheet» son una agrupación de notas sobre un tema en particular elaboradas
                                         para ser una rápida referencia de consulta, es como tener una «chuleta» o «copia»
                                         resumida de apuntes o trucos importantes.
@@ -59,14 +59,14 @@
                                         para que siempre lo tengas a la mano.</p>
                                     <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank"
                                         class="btn btn-warning text-white">Leer más</a>
-                                    <a href="./favorites.html" class="btn btn-secondary text-white">Añadir a favoritos</a>
+                                        <span class="favoritos" id="add1">Añadir A Favoritos</span>
                                 </div>
                             </div>
         
                             <div class="card mb-3 post" id="2">
                                 <div class="card-body">
-                                    <h5 class="card-title">¿Hay un error y no sabes qué commit es el culpable?</h5>
-                                    <p class="parrafo-post">
+                                    <h5 class="card-title" id="t2">¿Hay un error y no sabes qué commit es el culpable?</h5>
+                                    <p class="parrafo-post" id="p2">
                                         El comando <strong>git bisect</strong> lo puedes usar para 'biseccionar' (partir por la
                                         mitad), es decir,
                                         con este comando podrás ir diviendo toda la pila de commits en dos partes, una parte de
@@ -76,34 +76,30 @@
                                         cuál contiene el error y cuál no, hasta que al final, encontrarás al culpable.
                                     </p>
                                     <a href="https://www.instagram.com/p/CRg2NUOCbJK/" target="_blank"
-                                        class="btn btn-warning text-white">Leer más</a>
-                                    <a href="./favorites.html" class="btn btn-secondary text-white">Añadir a favoritos</a>
+                                        class="btn btn-warning text-white" >Leer más</a>
+                                        <span class="favoritos" id="add2">Añadir A Favoritos</span>
                                 </div>
                             </div>
         
                             <div class="card mb-3 post" id="3">
                                 <div class="card-body">
-                                    <h5 class="card-title">Escribe mejores commits</h5>
-        
-                                    <ul>
-                                        <li class="parrafo-post">Escríbelos en inglés</li>
-                                        <li class="parrafo-post">Usa verbos en imperativo como <strong>add</strong>, <strong>change</strong>,
-                                            <strong>fix</strong>.
-                                        </li>
-                                        <li class="parrafo-post">Evita usar puntos supensivos.</li>
-                                        <li class="parrafo-post">Sé conciso.</li>
-                                    </ul>
-        
-                                    <a href="https://www.instagram.com/p/CRO-ErBCOM5/" target="_blank"
+                                    <h5 class="card-title" id="t3">Escribe mejores commits</h5>
+                                    <p class="parrafo-post" id="p3">
+                                        Usa verbos en imperativo como <strong>add</strong>, <strong>change</strong>,<strong>fix</strong><br>
+                                        Evita usar puntos supensivos <br>
+                                        Sé conciso.
+
+                                    </p>
+                                      <a href="https://www.instagram.com/p/CRO-ErBCOM5/" target="_blank"
                                         class="btn btn-warning text-white">Leer más</a>
-                                    <a href="#" class="btn btn-secondary text-white">Añadir a favoritos</a>
+                                        <span class="favoritos" id="add3">Añadir A Favoritos</span>
                                 </div>
                             </div>
         
                             <div class="card mb-3 post" id="4">
                                 <div class="card-body">
-                                    <h5 class="card-title">Prioriza tus proyectos con GITHUB</h5>
-                                    <p class="parrafo-post">
+                                    <h5 class="card-title" id="t4">Prioriza tus proyectos con GITHUB</h5>
+                                    <p class="parrafo-post" id="p4">
                                         Los tableros Kanban son muy populares a la hora de controlar un proyecto y un flujo de
                                         trabajo. GITHUB permite crear tableros para organizar el seguimiento de tu repositorio,
                                         allí puedes apuntar y organizar las prioridades del proyecto, añadir notas, revisar
@@ -111,14 +107,14 @@
                                     </p>
                                     <a href="https://docs.github.com/es/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards"
                                         target="_blank" class="btn btn-warning text-white">Leer más</a>
-                                    <a href="./favorites.html" class="btn btn-secondary text-white">Añadir a favoritos</a>
+                                        <span class="favoritos" id="add4">Añadir A Favoritos</span>
                                 </div>
                             </div>
         
                             <div class="card mb-3 post" id="5">
                                 <div class="card-body">
-                                    <h5 class="card-title">Usa Alias en Git para ahorrar tiempo</h5>
-                                    <p class="parrafo-post">
+                                    <h5 class="card-title" id="t5">Usa Alias en Git para ahorrar tiempo</h5>
+                                    <p class="parrafo-post" id="p5">
                                         Si no quieres escribir el texto entero de cada uno de los comandos de Git, puedes
                                         establecer fácilmente un alias para cada comando usando <strong>git config</strong>. Por
                                         ejemplo:
@@ -129,7 +125,7 @@
                                     </p>
                                     <a href="https://image.slidesharecdn.com/02-build-pettersen-170504103745/95/git-aliases-of-the-gods-9-638.jpg?cb=1493974545"
                                         target="_blank" class="btn btn-warning text-white">Leer más</a>
-                                    <a href="./favorites.html" class="btn btn-secondary text-white">Añadir a favoritos</a>
+                                        <span class="favoritos" id="add5">Añadir A Favoritos</span>
                                 </div>
                             </div>
         
@@ -186,9 +182,7 @@
           <p>copyrigt &copy;2021 StackOverFlowers</p>
         </div>
       </footer>
-      
-      <!--Scripts-->
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
       <script src="./assets/js/script3.js"></script>
+      <script src="./assets/js/repos.js"></script>
 </body>
 </html>

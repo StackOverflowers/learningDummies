@@ -53,7 +53,7 @@
       <section id="publicaciones" class="publicaciones">
         <article class="post">
           <a href="" class="enlace-post"
-            ><h2 class="titulo">¿Qué es JavaScript?</h2></a
+            ><h2 class="titulo" id="t1">¿Qué es JavaScript?</h2></a
           >
           <img src="./assets/img/Js1.jpg" alt="" class="img-post" />
           <p>
@@ -63,7 +63,7 @@
             <strong>Fecha: </strong
             ><span class="datos-publicaciones1">Jueves 21 de julio</span>
           </p>
-          <p class="parrafo-post">
+          <p class="parrafo-post" id="p1">
             JavaScript es un lenguaje de programación o de secuencias de
             comandos que te permite implementar funciones complejas en páginas
             web, cada vez que una página web hace algo más que sentarse allí y
@@ -86,13 +86,13 @@
             código limpio y con el menor número de fallos posible.
           </p>
           <button type="button" class="btn btn-warning leer">Ocultar</button>
+          <button type="button" class="btn btn-warning add" id="add1">Favoritos</button>
           &nbsp;&nbsp;
           <span class="favoritos">Añadir A Favoritos</span>
         </article>
         <article class="post">
           <a href="" class="enlace-post"
-            ><h2 class="titulo">Declaración de variables</h2></a
-          >
+            ><h2 class="titulo" id="t2">Declaración de variables</h2></a>
           <img src="./assets/img/js2.PNG" alt="" class="img-post" />
           <p>
             <strong>Por:</strong
@@ -101,7 +101,7 @@
             <strong>Fecha: </strong
             ><span class="datos-publicaciones1">Jueves 21 de julio</span>
           </p>
-          <p class="parrafo-post">
+          <p class="parrafo-post" id="p2">
             Siempre que declares una variable emplea var , let o const ya que si
             no lo que estarás creando será una variable de ámbito global y esto
             puede desembocar en fallos como la sobrescritura de variables (por
@@ -115,13 +115,13 @@
             el siguiente código no sería válido:
           </p>
           <button type="button" class="btn btn-warning leer">Ocultar</button>
+          <button type="button" class="btn btn-warning add" id="add2">Favoritos</button>
           &nbsp;&nbsp;
           <span class="favoritos">Añadir A Favoritos</span>
         </article>
         <article class="post">
           <a href="" class="enlace-post"
-            ><h2 class="titulo">Comparación de variables</h2></a
-          >
+            ><h2 class="titulo" id="t3">Declaración de variables</h2></a>
           <img src="./assets/img/js3.jpeg" alt="" class="img-post" />
           <p>
             <strong>Por:</strong
@@ -130,7 +130,7 @@
             <strong>Fecha: </strong
             ><span class="datos-publicaciones1">Jueves 21 de julio</span>
           </p>
-          <p class="parrafo-post">
+          <p class="parrafo-post" id="p3">
             Siempre que compares variables emplea el triple igual === en vez del
             doble == puesto que este ultimo implica una conversión de tipo
             automática lo cual puede provocar “situaciones” como las del
@@ -147,13 +147,13 @@
             '' === false // is false <br />
           </p>
           <button type="button" class="btn btn-warning leer">Ocultar</button>
+          <button type="button" class="btn btn-warning add" id="add3">Favoritos</button>
           &nbsp;&nbsp;
           <span class="favoritos">Añadir A Favoritos</span>
         </article>
         <article class="post">
           <a href="" class="enlace-post"
-            ><h2 class="titulo">Comprobar si un resultado es finito</h2></a
-          >
+            ><h2 class="titulo" id="t4">Comprobar si un resultado es finito</h2></a>
           <img src="./assets/img/js4.PNG" alt="" class="img-post" />
           <p>
             <strong>Por:</strong
@@ -162,7 +162,7 @@
             <strong>Fecha: </strong
             ><span class="datos-publicaciones1">Jueves 21 de julio</span>
           </p>
-          <p class="parrafo-post">
+          <p class="parrafo-post" id="p4">
             Este es uno de esos consejos que parecen “inútiles” hasta que de
             repente un día lo necesitas (especialmente en el desarrollo back).
             Imagina por ejemplo consultas a base de datos cuyo resultado puede
@@ -178,14 +178,12 @@
             isFinite(null); // true <br />
           </p>
           <button type="button" class="btn btn-warning leer">Ocultar</button>
+          <button type="button" class="btn btn-warning add" id="add4">Favoritos</button>
           <span class="favoritos">Añadir A Favoritos</span>
         </article>
         <article class="post">
           <a href="" class="enlace-post"
-            ><h2 class="titulo">
-              Conserva la sintaxis y estructura de tu código limpia y ordenada
-            </h2></a
-          >
+          ><h2 class="titulo" id="t5">Conserva la sintaxis y estructura de tu código limpia y ordenada</h2></a>
           <img src="./assets/img/js5.PNG" alt="" class="img-post" />
           <p>
             <strong>Por:</strong
@@ -194,7 +192,7 @@
             <strong>Fecha: </strong
             ><span class="datos-publicaciones1">Jueves 21 de julio</span>
           </p>
-          <p class="parrafo-post">
+          <p class="parrafo-post" id="p5">
             Esto significa que guardes por ejemplo un límite de longitud de
             línea (80 caracteres) y que programes funciones razonablemente
             pequeñas. Un fallo es pensar que en una función larga lo podemos
@@ -206,14 +204,12 @@
             y la división de las tareas
           </p>
           <button type="button" class="btn btn-warning leer">Ocultar</button>
+          <button type="button" class="btn btn-warning add" id="add5">Favoritos</button>
           <span class="favoritos">Añadir A Favoritos</span>
         </article>
         <article class="post">
           <a href="" class="enlace-post"
-            ><h2 class="titulo">
-              javaScript es un lenguaje basado en prototipos.
-            </h2></a
-          >
+            ><h2 class="titulo" id="t6">Conserva la sintaxis y estructura de tu código limpia y ordenada</h2></a>
           <img src="./assets/img/js6.PNG" alt="" class="img-post" />
           <p>
             <strong>Por:</strong
@@ -222,7 +218,7 @@
             <strong>Fecha: </strong
             ><span class="datos-publicaciones1">Jueves 21 de julio</span>
           </p>
-          <p class="parrafo-post">
+          <p class="parrafo-post" id="p6">
             A diferencia de muchos otros lenguajes orientados a objetos, los
             objetos en javaScript no están basados en clases, están basados en
             prototipos. Entender la diferencia te permite aprovechar las
@@ -239,6 +235,7 @@
           <button type="button" class="btn btn-warning leer">Ocultar</button>
           &nbsp;&nbsp;&nbsp;&nbsp;
           <span class="favoritos">Añadir A Favoritos</span>
+          <button type="button" class="btn btn-warning add" id="add6">Favoritos</button>
         </article>
       </section>
 
@@ -348,6 +345,10 @@
       </section>
     </section>
 
+    <section id="local"">
+
+    </section>
+
     <footer>
       <div class="footer-content">
         <h3>StackOverFlowers</h3>
@@ -372,6 +373,7 @@
         <p>copyrigt &copy;2021 StackOverFlowers</p>
       </div>
     </footer>
+    <script src="./assets/js/script5.js"></script>
     <script src="./assets/JS/script3.js"></script>
     <script src="."></script>
   </body>
