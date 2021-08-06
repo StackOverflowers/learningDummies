@@ -83,6 +83,24 @@ let preguntas2 = [
     respuesta: 2,
     tip: "Uyyyy no me acuerdo ni el cumple de mis hijos menos de la fecha exacta de la creacion de Git , lo siento"
   },
+  {
+    pregunta: "¿Ques es Scrum ?",
+    opcion: ["A.Funciones de CSS ", "B.Software de equipo ", "C.Metodogia agil ", "D.Mascara de html "],
+    respuesta: 3,
+    tip: "Si no sabes, entonces la respuesta es la C "
+  },
+  {
+    pregunta: "¿Cuantos H1 es recomendable poner por pagina?",
+    opcion: ["A.Solo 1 ", "B. Los que se necesiten ","C. Maximo 3 ", "D.Ninguno "],
+    respuesta: 1,
+    tip: "Ser unico de hace especial"
+  },
+  {
+    pregunta: "¿Que hace un Scrum master?",
+    opcion: ["A.Hace cumplir todo el ciclo SCRUM, ", "B.Se Encarga de las reuniones ", "C.Apoya a los otros miembros ", "D.Todas las anteriores "],
+    respuesta: 1,
+    tip: "La union hace la fuerza"
+  },
 ];
 
 let preguntas = preguntas2.sort(function(){
