@@ -1,196 +1,253 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Repositorios</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-    <link rel="stylesheet" href="./assets/css/estilosblog.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Repositorios</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <link rel="stylesheet" href="./assets/css/estilosblog.css">
 </head>
+
 <body>
-    <nav class="navbar navbar-expand-lg  bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="./index.html">Learning Dummies</a>
-          <div class="bienvenido">
-            <div>
-              <h6 class="bienvenida" id="bienvenida"></h6>
-            </div>
-          </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item dropdown">
-            </ul>
-
-          </div>
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="./favorites.html">Tips favoritos</a>
-          </li>
+  <nav class="navbar navbar-expand-lg  bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="./index.html">Learning Dummies</a>
+      <div class="bienvenido">
+        <div>
+          <h6 class="bienvenida" id="bienvenida"></h6>
         </div>
-      </nav>
-      <section id="principal" class="principal">
-        <section id="publicaciones" class="publicaciones">
-            <div class="container mb-4">
-                <h1>Repositorios</h1>
-                <span>Un repositorio es un espacio centralizado donde se almacena, organiza, mantiene y difunde información digital, habitualmente archivos informáticos, que pueden contener trabajos científicos, conjuntos de datos o software.</span>
-                <span>Aquí encontrarás los mejores tips para que aprendas a usar repositorios
-                    con experticia.</span>
-            </div>
-        
-            <div class="container-fluid" id="main-content">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12">
-        
-                            <div class="card mb-3 post" id="1">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="t7">Ten a la mano un resumen de los comandos más usados</h5>
-                                    <img src="./assets/img/repo1.png" alt="Imagen con título Git Cheat Sheet" class="">
-                                    <p class="parrafo-post" id="p7" >
-                                        Los «Cheat Sheet» son una agrupación de notas sobre un tema en particular elaboradas
-                                        para ser una rápida referencia de consulta, es como tener una «chuleta» o «copia»
-                                        resumida de apuntes o trucos importantes.
-                                    </p>
-                                    <p class="parrafo-post">Da click en 'Leer más' para obtener el git cheat sheet más actualizado
-                                        para que siempre lo tengas a la mano.</p>
-                                    <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank"
-                                        class="btn btn-warning text-white">Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
-                                        <span class="btn btn-dark favoritos" id="add1">Añadir A Favoritos</span>
-                                </div>
-                            </div>
-        
-                            <div class="card mb-3 post" id="2">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="t2">¿Hay un error y no sabes qué commit es el culpable?</h5>
-                                    <p class="parrafo-post" id="p2">
-                                        El comando <strong>git bisect</strong> lo puedes usar para 'biseccionar' (partir por la
-                                        mitad), es decir,
-                                        con este comando podrás ir diviendo toda la pila de commits en dos partes, una parte de
-                                        la pila contendrá el error y otra parte no. Vas a ir cambiando entre el historial de
-                                        commits
-                                        mientras indicas
-                                        cuál contiene el error y cuál no, hasta que al final, encontrarás al culpable.
-                                    </p>
-                                    <a href="https://www.instagram.com/p/CRg2NUOCbJK/" target="_blank"
-                                        class="btn btn-warning text-white" >Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
-                                        <span class="btn btn-dark favoritos" id="add2">Añadir A Favoritos</span>
-                                </div>
-                            </div>
-        
-                            <div class="card mb-3 post" id="3">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="t3">Escribe mejores commits</h5>
-                                    <p class="parrafo-post" id="p3">
-                                        Usa verbos en imperativo como <strong>add</strong>, <strong>change</strong>,<strong>fix</strong><br>
-                                        Evita usar puntos supensivos <br>
-                                        Sé conciso.
+      </div>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item dropdown">
+        </ul>
 
-                                    </p>
-                                      <a href="https://www.instagram.com/p/CRO-ErBCOM5/" target="_blank"
-                                        class="btn btn-warning text-white">Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
-                                        <span class="btn btn-dark favoritos" id="add3">Añadir A Favoritos</span>
-                                </div>
-                            </div>
-        
-                            <div class="card mb-3 post" id="4">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="t4">Prioriza tus proyectos con GITHUB</h5>
-                                    <p class="parrafo-post" id="p4">
-                                        Los tableros Kanban son muy populares a la hora de controlar un proyecto y un flujo de
-                                        trabajo. GITHUB permite crear tableros para organizar el seguimiento de tu repositorio,
-                                        allí puedes apuntar y organizar las prioridades del proyecto, añadir notas, revisar
-                                        problemas y filtrar por materias.
-                                    </p>
-                                    <a href="https://docs.github.com/es/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards"
-                                        target="_blank" class="btn btn-warning text-white">Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
-                                        <span class="btn btn-dark favoritos" id="add4">Añadir A Favoritos</span>
-                                </div>
-                            </div>
-        
-                            <div class="card mb-3 post" id="5">
-                                <div class="card-body">
-                                    <h5 class="card-title" id="t5">Usa Alias en Git para ahorrar tiempo</h5>
-                                    <p class="parrafo-post" id="p5">
-                                        Si no quieres escribir el texto entero de cada uno de los comandos de Git, puedes
-                                        establecer fácilmente un alias para cada comando usando <strong>git config</strong>. Por
-                                        ejemplo:
-        
-                                    <ul>$ git config --global alias.ci commit</ul>
-                                    <p class="parrafo-post">Y luego para hacer un commit sólo escribirías: </p> 
-                                    <ul>$ git ci</ul>
-                                    </p>
-                                    <a href="https://image.slidesharecdn.com/02-build-pettersen-170504103745/95/git-aliases-of-the-gods-9-638.jpg?cb=1493974545"
-                                        target="_blank" class="btn btn-warning text-white">Leer más</a> &nbsp; &nbsp; &nbsp; &nbsp;
-                                        <span class="btn btn-dark favoritos" id="add5">Añadir A Favoritos</span>
-                                </div>
-                            </div>
-        
-                        </div>
+      </div>
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="./favorites.html">Tips favoritos</a>
+      </li>
+    </div>
+  </nav>
+  <section id="principal" class="principal">
+    <section id="publicaciones" class="publicaciones">
+      <div class="container mb-4">
+        <h1>Repositorios</h1>
+        <span>Un repositorio es un espacio centralizado donde se almacena, organiza, mantiene y difunde información
+          digital, habitualmente archivos informáticos, que pueden contener trabajos científicos, conjuntos de datos o
+          software.</span>
+        <span>Aquí encontrarás los mejores tips para que aprendas a usar repositorios
+          con experticia.</span>
+      </div>
 
-        </section>
+      <div class="container-fluid" id="main-content">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
 
-        <section id="sidebar" class="sidebar p-3">    
-            <section id="buscar" class="buscar">
-                <h2 class="card encabezado-sidebar"> &nbsp; Buscar</h2>
-                <form action="">
-                  <input type="text" name="buscar" placeholder="" />
-                  <a href="enlace-sidebar"><button class="boton">Ir</button></a>
-                  
-                </form>
-              </section>      
-            <div class="card categorias" style="width: 18rem">
-                <div class="card-header text-white encabezado-sidebar">
-                    Categorias
+              <div class="card mb-3 post" id="1">
+                <div class="card-body">
+                  <h5 class="card-title" id="t7">Ten a la mano un resumen de los comandos más usados</h5>
+                  <img src="./assets/img/repo1.png" alt="Imagen con título Git Cheat Sheet" class="">
+                  <p class="parrafo-post" id="p7">
+                    Los «Cheat Sheet» son una agrupación de notas sobre un tema en particular elaboradas
+                    para ser una rápida referencia de consulta, es como tener una «chuleta» o «copia»
+                    resumida de apuntes o trucos importantes.
+                  </p>
+                  <p class="parrafo-post">Da click en 'Leer más' para obtener el git cheat sheet más actualizado
+                    para que siempre lo tengas a la mano.</p>
+                  <a href="https://education.github.com/git-cheat-sheet-education.pdf" target="_blank"
+                    class="btn btn-warning text-white">Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <span class="btn btn-dark add" id="add1">Añadir A Favoritos</span>
                 </div>
-                
-                    <a href="moduloHtmlCss.html" class="enlace-sidebar" target="_blank">HTML Y CSS</a>
-                    <a href="javaScript.html" class="enlace-sidebar" target="_blank">Javascript</a>
-                    <a href="logica.html" class="enlace-sidebar" target="_blank">Logica y Algoritmia</a>
-                    <a href="bootstrap.html" class="enlace-sidebar" target="_blank">Bootstrap</a>
-                    <a href="repos.html" class="enlace-sidebar" target="_blank">Repositorios</a>
-                    <a href="scrum.html" class="enlace-sidebar" target="_blank">Scrum</a>
-            </div>
-            <div class="card categorias" style="width: 18rem">
-                <div class="card-header text-white encabezado-sidebar">
-                    Últimos tips añadidos
+              </div>
+
+              <div class="card mb-3 post" id="2">
+                <div class="card-body">
+                  <h5 class="card-title" id="t2">¿Hay un error y no sabes qué commit es el culpable?</h5>
+                  <p class="parrafo-post" id="p2">
+                    El comando <strong>git bisect</strong> lo puedes usar para 'biseccionar' (partir por la
+                    mitad), es decir,
+                    con este comando podrás ir diviendo toda la pila de commits en dos partes, una parte de
+                    la pila contendrá el error y otra parte no. Vas a ir cambiando entre el historial de
+                    commits
+                    mientras indicas
+                    cuál contiene el error y cuál no, hasta que al final, encontrarás al culpable.
+                  </p>
+                  <a href="https://www.instagram.com/p/CRg2NUOCbJK/" target="_blank"
+                    class="btn btn-warning text-white">Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <span class="btn btn-dark add" id="add2">Añadir A Favoritos</span>
                 </div>
-                <ul class="list-group list-group-flush">
-                    <a href="#5"><li class="enlace-sidebar">Usa alias en Git para ahorrar tiempo</li></a>
-                    <a href="#4"><li class="enlace-sidebar">Prioriza tus proyectos con GITHUB</li></a>
-                    <a href="#3"><li class="enlace-sidebar">Escribe mejores commits</li></a>
-                    <a href="#2"><li class="enlace-sidebar">¿Hay un error y no sabes qué commit es el culpable?</li></a>
-                    <a href="#1"><li class="enlace-sidebar">Ten a la mano un resumen de los comandos más usados</li></a>
-                </ul>
+              </div>
+
+              <div class="card mb-3 post" id="3">
+                <div class="card-body">
+                  <h5 class="card-title" id="t3">Escribe mejores commits</h5>
+                  <p class="parrafo-post" id="p3">
+                    Usa verbos en imperativo como <strong>add</strong>, <strong>change</strong>,<strong>fix</strong><br>
+                    Evita usar puntos supensivos <br>
+                    Sé conciso.
+
+                  </p>
+                  <a href="https://www.instagram.com/p/CRO-ErBCOM5/" target="_blank"
+                    class="btn btn-warning text-white">Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <span class="btn btn-dark add" id="add3">Añadir A Favoritos</span>
+                </div>
+              </div>
+
+              <div class="card mb-3 post" id="4">
+                <div class="card-body">
+                  <h5 class="card-title" id="t4">Prioriza tus proyectos con GITHUB</h5>
+                  <p class="parrafo-post" id="p4">
+                    Los tableros Kanban son muy populares a la hora de controlar un proyecto y un flujo de
+                    trabajo. GITHUB permite crear tableros para organizar el seguimiento de tu repositorio,
+                    allí puedes apuntar y organizar las prioridades del proyecto, añadir notas, revisar
+                    problemas y filtrar por materias.
+                  </p>
+                  <a href="https://docs.github.com/es/issues/organizing-your-work-with-project-boards/managing-project-boards/about-project-boards"
+                    target="_blank" class="btn btn-warning text-white">Leer más</a>&nbsp; &nbsp; &nbsp; &nbsp;
+                  <span class="btn btn-dark add" id="add4">Añadir A Favoritos</span>
+                </div>
+              </div>
+
+              <div class="card mb-3 post" id="5">
+                <div class="card-body">
+                  <h5 class="card-title" id="t5">Usa Alias en Git para ahorrar tiempo</h5>
+                  <p class="parrafo-post" id="p5">
+                    Si no quieres escribir el texto entero de cada uno de los comandos de Git, puedes
+                    establecer fácilmente un alias para cada comando usando <strong>git config</strong>. Por
+                    ejemplo:
+
+                  <ul>$ git config --global alias.ci commit</ul>
+                  <p class="parrafo-post">Y luego para hacer un commit sólo escribirías: </p>
+                  <ul>$ git ci</ul>
+                  </p>
+                  <a href="https://image.slidesharecdn.com/02-build-pettersen-170504103745/95/git-aliases-of-the-gods-9-638.jpg?cb=1493974545"
+                    target="_blank" class="btn btn-warning text-white">Leer más</a> &nbsp; &nbsp; &nbsp; &nbsp;
+                  <span class="btn btn-dark add" id="add5">Añadir A Favoritos</span>
+                </div>
+              </div>
             </div>
-        </section>
+    </section>
+
+    <section id="sidebar" class="sidebar">
+      <section id="buscar" class="buscar">
+        <h2 class="card-header text-white encabezado-sidebar"> &nbsp; Buscar</h2>
+        <form action="">
+          <input type="text" name="buscar" placeholder="" />
+          <a href="enlace-sidebar"><button class="boton">Ir</button></a>
+
+        </form>
       </section>
+      <div class="card categorias" style="width: 21rem">
+        <div class="card-header text-white encabezado-sidebar">
+          Categorias
+        </div>
 
-      <footer>
-        <div class="footer-content">
-          <h3>StackOverFlowers</h3>
-          <p>Learning Dummies es un sitio web que busca compartir conocimiento por medio de algunos tips útiles para que a
-            partir de estos conocimientos básicos todos
-            puedan llevar su carrera profesional a otro nivel</p>
-          <a href="./about.html">Conoce más acerca de nosotros</a>
-          <ul class="socials">
-            <li><a href="https://twitter.com/semillero_sof" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
-            <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
-            <li><a href="https://github.com/StackOverflowers" target="_blank"><i class="fab fa-git"></i></a></li>
-          </ul>
+        <a href="moduloHtmlCss.html" class="enlace-sidebar" target="_blank">HTML Y CSS</a>
+        <a href="javaScript.html" class="enlace-sidebar" target="_blank">Javascript</a>
+        <a href="logica.html" class="enlace-sidebar" target="_blank">Logica y Algoritmia</a>
+        <a href="bootstrap.html" class="enlace-sidebar" target="_blank">Bootstrap</a>
+        <a href="repos.html" class="enlace-sidebar" target="_blank">Repositorios</a>
+        <a href="scrum.html" class="enlace-sidebar" target="_blank">Scrum</a>
+      </div>
+      <div class="card categorias" style="width: 21rem">
+        <div class="card-header text-white encabezado-sidebar">
+          Últimos tips añadidos
         </div>
-        <div class="footer-bottom">
-          <p>Copyrigt &copy;2021 StackOverFlowers</p>
-        </div>
-      </footer>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-        crossorigin="anonymous"></script>
-      <script src="./assets/js/script.js"></script>
-      <script src="./assets/js/script3.js"></script>
-      <script src="./assets/js/repos.js"></script>
+        <ul class="list-group list-group-flush">
+          <a href="#5">
+            <li class="enlace-sidebar">Usa alias en Git para ahorrar tiempo</li>
+          </a>
+          <a href="#4">
+            <li class="enlace-sidebar">Prioriza tus proyectos con GITHUB</li>
+          </a>
+          <a href="#3">
+            <li class="enlace-sidebar">Escribe mejores commits</li>
+          </a>
+          <a href="#2">
+            <li class="enlace-sidebar">¿Hay un error y no sabes qué commit es el culpable?</li>
+          </a>
+          <a href="#1">
+            <li class="enlace-sidebar">Ten a la mano un resumen de los comandos más usados</li>
+          </a>
+        </ul>
+      </div>
+
+      <div class="card categorias" style="width: 21rem">
+        <div class="card-header text-white encabezado-sidebar">Ultimas noticias</div>
+        <a href="https://www.europapress.es/portaltic/software/noticia-javascript-mantiene-lenguaje-programacion-mas-popular-14-millones-desarrolladores-20210430172721.html"
+          class="enlace-sidebar">
+          <h4>
+            Javascript se mantiene como el lenguaje de programación más
+            popular, con 14 millones de desarrolladores
+          </h4>
+          <p>
+            Javascript se mantiene como el lenguaje de programación más
+            popular, con 14 millones de desarrolladores El lenguaje de
+            programación Javascript es el más utilizado en la actualidad, y
+            casi 14 millones de desarrolladores en el mundo programan con él
+            especialmente en la web y para la nube, seguido de otros lenguajes
+            como Python, Java y C++. Así se extrae de la vigésima edición del
+            informe State of the Developer Nation, realizado por SlashData y
+            para el cual se han encuestado a más de 19.000 desarrolladores de
+            155 países entre noviembre de 2020 y febrero de 2021.
+          </p>
+        </a>
+        <a
+            href="https://jdevmanzo.medium.com/javascript-se-est%C3%A1-comiendo-el-mundo-3576e97f0dae"
+            class="enlace-sidebar"
+          >
+            <h4>Javascript se está comiendo el mundo</h4>
+            <p>
+              Si has oido las noticias ultimamente, Javascript y NodeJs se están
+              comiendo el mundo del software. NodeJs es un ambiente Backend
+              hecho con y para Javascript que corre en los motores V8 que
+              desarrolla y mantiene Google Chrome. Podríamos pensar que es una
+              tecnología “hipster”, pero NodeJs se está convirtiendo rápidamente
+              en uno de los ambientes más comunes para desarrollar aplicaciones
+              web y ya cuenta con una cantidad impresionante de Fans.
+              Personalmente no lo he usado tan a fondo como quisiera, pero
+              sencillamente me encanta y cada día quiero usarlo más. Si no me
+              crees, te dejo una lista de las 4 gigantes que adoptaron esta
+              tecnología Javascript/Nodejs que les permite poseer plataformas de
+              tráfico pesado y alta calidad de funcionamiento.
+            </p>
+          </a>
+      </div>
+    </section>
+  </section>
+
+  <footer>
+    <div class="footer-content">
+      <h3>StackOverFlowers</h3>
+      <p>Learning Dummies es un sitio web que busca compartir conocimiento por medio de algunos tips útiles para que a
+        partir de estos conocimientos básicos todos
+        puedan llevar su carrera profesional a otro nivel</p>
+      <a href="./about.html">Conoce más acerca de nosotros</a>
+      <ul class="socials">
+        <li><a href="https://twitter.com/semillero_sof" target="_blank"><i class="fab fa-twitter-square"></i></a></li>
+        <li><a href="https://es-la.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href="https://github.com/StackOverflowers" target="_blank"><i class="fab fa-git"></i></a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+      <p>Copyrigt &copy;2021 StackOverFlowers</p>
+    </div>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+  <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/script3.js"></script>
+  <script src="./assets/js/repos.js"></script>
 </body>
+
 </html>
